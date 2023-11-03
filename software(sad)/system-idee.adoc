@@ -3,11 +3,13 @@
 == Kernaufgabe des Systems
 
 === Beschreibung:
+
 Die Kernaufgabe unseres Systems ist den Benutzern zu zeigen, wie wichtig die Wegwerfgesellschaft ist.
 Mit dieser Anwendung, in diesem Fall ein interaktives Spiel, schaffen wir ein Bewusstsein für die negativen Auswirkungen der Wegwerfgesellschaft zu schaffen.
 Das Spiel verwendet JavaFX und einen Joystick für eine ansprechende Benutzererfahrung, während es die Botschaft der Ressourcenschonung vermittelt.
 
 ==== Wichtigsten Begriffe der Fachdomäne:
+
 - Interaktives Spiel
 - Benutzererfahrung (UX)
 - Raspberry Pi
@@ -15,6 +17,7 @@ Das Spiel verwendet JavaFX und einen Joystick für eine ansprechende Benutzererf
 - Joystick
 
 == Kategorie von System
+
 Dieses System ist ein "interaktives Multimedia-System", das Text, Bilder, Audio und Video miteinander verbindet und gleichzeitig eine interaktive Benutzererfahrung bietet.
 Das bedeutet, dass der Benutzer auch mit dem System beeinflussen kann.
 Dies geschieht in diesem Fall mit einem Joystick.
@@ -34,63 +37,77 @@ Dies geschieht in diesem Fall mit einem Joystick.
 
 == Relevante Stakeholder
 
-[cols="1,1,1,1"]
+[cols="1,1,1,1,1"]
 |===
-|Stakeholder |Ansprechperson|Beschreibung |Bedürfnisse
-
+|Stakeholder|Stakeholdertyp |Kontaktperson|Hintergrund |Bedürfnisse
 |Schulklassen
+|Produkt-Stakeholder
 |tbd
 a|
 * Schülergruppen im 7. - 9. Schuljahr (13 - 15 Jährig)
-* Haben in der Regel wenig Wissen über Energiethemen
-* Haben Freude an spielerischen Elementen
+* Wissen mehrheitlich nicht woher ihre gekauften Gegenstände kommen
+* Kennen teilweise bereits gute Ansätze zur Wiederverwertung
+* Kaufen sich selten Gegenstände gebraucht
+https://fhnw-projecttrack.atlassian.net/l/cp/t1XU1nxP[Ergbnisse Umfrage]
+
 a|
-* Ein einfaches und selbsterklärendes Spiel
-* Spass beim Spielen
+* Wollen ein abwechslungsreiches Spielerlebnis
+* Wollen unbedingt Spielspass (Cooles Spielerlebnis)
+* Wollen ein performantes Spiel (Flüssig)
+* Wollen das Konzept und der Sinn vom Spiel schnell verstehen
+* Wollen Soundeffekte
+* Wollen das Spiel zu zweit spielen
+https://fhnw-projecttrack.atlassian.net/l/cp/t1XU1nxP[Ergbnisse Umfrage]
 
 |Primeo Energie
+|Projekt-Stakeholder
 |Wolfgang Szabó
+(info@primeo-energie.ch)
 a|
 * Energiekonzern
-* Wollen über Energiethemen aufklären
 * https://www.primeo-energie.ch/ueber-uns/kosmos.html[Primeo Energie Kosmos]
 a|
+* Wollen über Energiethemen aufklären
+* Lehrreiches und einfach zu verstehendes Spiel
 * Robustes Design
-* Optimaler Zugang zum Hardware
-* Benutzerfreundlich
+* Hardware gut zugänglich
+* Konfigurierbare Parameter
+* Gut transportierbar
 
 |Product Owners
+|Projekt-Stakeholder
 |
 Cédric Merz (cedric.merz@fhnw.ch)
 Katja Pott (katja.pott@fhnw.ch)
 a|
-* Verantwortich für das Produktbacklog
-* Visionieren das Produkt
+* “Interne” Abnehmer des Produkts
+* **Katja Pott**
+- Wissenschaftliche Assistentin und Master-Studentin / Design & Technology FHNW
+- Informatik & Designhintergrund (Profilierung ICompetence)
+* **Cédric Merz**
+- Wissenschaftlicher Mitarbeiter / HCI & XR FHNW
+- Informatik & Designhintergrund (Profilierung ICompetence)
 a|
-* Soziale Interaktion
-* Bewusstsein der Wegwerfgesellschaft schaffen
+* Liebe ins Produkt (Animationen, Soundeffekte, Ranking)
+* Wollen, dass man Kindern einfach aufzeigen kann, was Energie bedeutet
+* Kinder sollen Spass und Freude beim spielen haben
+* Professioneller Eindruck vom Produkt
+* Die Kinder sollen etwas lernen vom Produkt
+* Spiel soll verständlich für die Kinder sein
 
-|Software Architekt
+|Product Owners
+|Projekt-Stakeholder
 |
-Sidharth Jaiswal (sidharth.jaiswal@students.fhnw.ch)
+Sibyelle Peter
+(sibyelle.peter@fhnw.ch)
 a|
-* Verantwortlich für die Softwareentwicklung des Produkts
-* Strukturiert das System
+* Verwaltung über das Projekt
+* Gibt allgemeine Anforderungen
 a|
-* Qualitätsziele definieren
-* Technische Rahmentbedingungen und Anforderungen erfüllen
-
-|Entwicklungsteam
-a|
-* Haris Alilovski (haris.alilovski@students.fhnw.ch)
-* Tom Ritter (tom.ritter@students.fhnw.ch)
-a|
-* Verantwortlich für die Einhaltung branchenüblicher Code Conventions
-* Trennung von Zuständigkeiten
-a|
-* Nachvollziehbarkeit mit Software-Architektur Dokument (SAD)
-* Qualität von Source Code erhöhen
-
+* Will, dass die https://fhnw-projecttrack.atlassian.net/l/cp/azuAnzR2[Allgemeine Anforderungen] an die Projekte eingehalten werden
 |===
+
 == Schnittstellen zu externen Systemen
-* Wissenschaftliche Datenbanken: Datenbanken (von Primeo Energie), die Forschungsergebnisse und Studien zum Thema Nachhaltigkeit und Wegwerfgesellschaft enthalten.
+
+* Für das Punktesystem sowie für die Berechnungen von Energiesparnisse benötigen wir Unterstützung von Primeo Energie.
+* Die Forschungsergebnisse und Studien zum Thema Nachhaltigkeit und Wegwerfgesellschaft wird von Primeo Energie als JSON-Datei abgegeben.
