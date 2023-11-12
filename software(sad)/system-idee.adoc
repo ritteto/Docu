@@ -24,16 +24,40 @@ Dies geschieht in diesem Fall mit einem Joystick.
 
 == Wesentliche Qualitätsanforderungen
 
-* **Funktionalität**
-** Interoperabilität: Fähigkeit, mit vorgegebenen Systemen zusammenzuwirken.
-** Angemessenheit: Eignung von Funktionen für spezifizierte Aufgaben, zum Beispiel aufgabenorientierte Zusammensetzung von Funktionen aus Teilfunktionen.
-** Effizienz
-*** Performance: Wie effizient nutzt das System die ihm zur Verfügung stehenden Ressourcen?
-** Analysierbarkeit: Mögliche Massnahmen für technische Fehler definieren
-* **Benutzerfreundlichkeit**
-** Attraktivität: Anziehungskraft der Anwendung gegenüber dem Benutzer.
-** Bedienbarkeit: Aufwand für den Benutzer, die Anwendung zu bedienen.
-** Verständlichkeit: Selbsterklärende Aufgaben
+=== Leistung
+==== Ladezeit des Spiels
+
+* *Qualitätsanforderung:* Die Ladezeit des Spiels sollte unter X Sekunden liegen, um eine schnelle und nahtlose Benutzererfahrung zu gewährleisten.
+* *Ziel:* Die Ladezeit des Spiels soll unter X Sekunden liegen, um sicherzustellen, dass Spieler schnell ins Spiel kommen.
+* *Messung:* Verwendung von Ladezeit-Analysetools und Erfassung der Zeit, die benötigt wird, um das Spiel zu starten.
+
+==== Zuverlässigkeit
+===== Stabilität während Spielsitzung
+
+* *Qualitätsanforderung:* Das Spiel sollte während einer durchschnittlichen Spielsitzung von X Stunden nicht abstürzen.
+* *Ziel:* Eine zuverlässige Spielerfahrung ohne häufige Abstürze.
+* *Messung:* Überwachung der Anzahl der Abstürze pro Spielsitzung.
+
+=== Benutzerfreundlichkeit
+==== Intuitive Benutzeroberfläche
+
+* *Qualitätsanforderung:* Die Benutzeroberfläche sollte für Spieler aller Altersgruppen intuitiv und leicht verständlich sein.
+* *Ziel:* Ein leicht verständliches Design, das die Nutzung für verschiedene Altersgruppen ermöglicht.
+* *Messung:* Durchführung von Benutzertests und Bewertungen der Benutzeroberfläche.
+
+=== Benutzeroberfläche (UI) und Interaktion
+
+==== Reaktion auf Joystick- und Tastensteuerung
+
+* *Qualitätsanforderung:* Das Spiel sollte präzise und sofort auf Joystick- und Tastensteuerung reagieren.
+* *Ziel:* Eine nahtlose und reaktionsschnelle Steuerung für Spieler, die Joystick und Tasten verwenden.
+* *Messung:* Überwachung der Verzögerung zwischen Eingabe und Reaktion.
+
+==== Klare visuelle Darstellung von Joystick- und Tastenaktionen
+
+* *Qualitätsanforderung:* Joystick- und Tastenaktionen sollten klar und deutlich auf dem Bildschirm dargestellt werden.
+* *Ziel:* Spieler sollen ihre Eingaben visuell erkennen und nachverfolgen können.
+* *Messung:* Beurteilung der Sichtbarkeit und Klarheit von UI-Elementen für Joystick- und Tasteneingaben.
 
 == Relevante Stakeholder
 
@@ -48,7 +72,7 @@ a|
 * Wissen mehrheitlich nicht woher ihre gekauften Gegenstände kommen
 * Kennen teilweise bereits gute Ansätze zur Wiederverwertung
 * Kaufen sich selten Gegenstände gebraucht
-https://fhnw-projecttrack.atlassian.net/l/cp/t1XU1nxP[Ergbnisse Umfrage]
+https://fhnw-projecttrack.atlassian.net/l/cp/t1XU1nxP[Ergebnisse Umfrage]
 
 a|
 * Wollen ein abwechslungsreiches Spielerlebnis
@@ -107,7 +131,7 @@ a|
 * Will, dass die https://fhnw-projecttrack.atlassian.net/l/cp/azuAnzR2[Allgemeine Anforderungen] an die Projekte eingehalten werden
 |===
 
-== Schnittstellen zu externen Systemen
+== Externe Hilfe
 
-* Für das Punktesystem sowie für die Berechnungen von Energiesparnisse benötigen wir Unterstützung von Primeo Energie.
 * Die Forschungsergebnisse und Studien zum Thema Nachhaltigkeit und Wegwerfgesellschaft wird von Primeo Energie als JSON-Datei abgegeben.
+* Diese Ergebnisse werden für die Berechnungen im Punktesystem benutzt.
