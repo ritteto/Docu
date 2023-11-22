@@ -3,13 +3,13 @@
 == Kernaufgabe des Systems
 
 === Beschreibung:
-
 Die Kernaufgabe unseres Systems ist den Benutzern zu zeigen, wie wichtig die Wegwerfgesellschaft ist.
 Mit dieser Anwendung, in diesem Fall ein interaktives Spiel, schaffen wir ein Bewusstsein für die negativen Auswirkungen der Wegwerfgesellschaft zu schaffen.
 Das Spiel verwendet JavaFX und einen Joystick für eine ansprechende Benutzererfahrung, während es die Botschaft der Ressourcenschonung vermittelt.
 
-==== Wichtigsten Begriffe der Fachdomäne:
+https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/63900519/Produktvision[Vollständige Beschreibung zur Produktvision]
 
+==== Wichtigsten Begriffe der Fachdomäne:
 - Interaktives Spiel
 - Benutzererfahrung (UX)
 - Raspberry Pi
@@ -17,7 +17,6 @@ Das Spiel verwendet JavaFX und einen Joystick für eine ansprechende Benutzererf
 - Joystick
 
 == Kategorie von System
-
 Dieses System ist ein "interaktives Multimedia-System", das Text, Bilder, Audio und Video miteinander verbindet und gleichzeitig eine interaktive Benutzererfahrung bietet.
 Das bedeutet, dass der Benutzer auch mit dem System beeinflussen kann.
 Dies geschieht in diesem Fall mit einem Joystick.
@@ -59,77 +58,11 @@ Dies geschieht in diesem Fall mit einem Joystick.
 * *Ziel:* Spieler sollen ihre Eingaben visuell erkennen und nachverfolgen können.
 * *Messung:* Beurteilung der Sichtbarkeit und Klarheit von UI-Elementen für Joystick- und Tasteneingaben.
 
+https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/63900538/Requirements#Qualit%C3%A4tsanforderungen[Vollständige Beschreibung zu Qualitätsanforderungen]
+
 == Relevante Stakeholder
 
-[cols="1,1,1,1,1"]
-|===
-|Stakeholder|Stakeholdertyp |Kontaktperson|Hintergrund |Bedürfnisse
-|Schulklassen
-|Produkt-Stakeholder
-|tbd
-a|
-* Schülergruppen im 7. - 9. Schuljahr (13 - 15 Jährig)
-* Wissen mehrheitlich nicht woher ihre gekauften Gegenstände kommen
-* Kennen teilweise bereits gute Ansätze zur Wiederverwertung
-* Kaufen sich selten Gegenstände gebraucht
-https://fhnw-projecttrack.atlassian.net/l/cp/t1XU1nxP[Ergebnisse Umfrage]
-
-a|
-* Wollen ein abwechslungsreiches Spielerlebnis
-* Wollen unbedingt Spielspass (Cooles Spielerlebnis)
-* Wollen ein performantes Spiel (Flüssig)
-* Wollen das Konzept und der Sinn vom Spiel schnell verstehen
-* Wollen Soundeffekte
-* Wollen das Spiel zu zweit spielen
-https://fhnw-projecttrack.atlassian.net/l/cp/t1XU1nxP[Ergbnisse Umfrage]
-
-|Primeo Energie
-|Projekt-Stakeholder
-|Wolfgang Szabó
-(info@primeo-energie.ch)
-a|
-* Energiekonzern
-* https://www.primeo-energie.ch/ueber-uns/kosmos.html[Primeo Energie Kosmos]
-a|
-* Wollen über Energiethemen aufklären
-* Lehrreiches und einfach zu verstehendes Spiel
-* Robustes Design
-* Hardware gut zugänglich
-* Konfigurierbare Parameter
-* Gut transportierbar
-
-|Product Owners
-|Projekt-Stakeholder
-|
-Cédric Merz (cedric.merz@fhnw.ch)
-Katja Pott (katja.pott@fhnw.ch)
-a|
-* “Interne” Abnehmer des Produkts
-* **Katja Pott**
-- Wissenschaftliche Assistentin und Master-Studentin / Design & Technology FHNW
-- Informatik & Designhintergrund (Profilierung ICompetence)
-* **Cédric Merz**
-- Wissenschaftlicher Mitarbeiter / HCI & XR FHNW
-- Informatik & Designhintergrund (Profilierung ICompetence)
-a|
-* Liebe ins Produkt (Animationen, Soundeffekte, Ranking)
-* Wollen, dass man Kindern einfach aufzeigen kann, was Energie bedeutet
-* Kinder sollen Spass und Freude beim spielen haben
-* Professioneller Eindruck vom Produkt
-* Die Kinder sollen etwas lernen vom Produkt
-* Spiel soll verständlich für die Kinder sein
-
-|Product Owners
-|Projekt-Stakeholder
-|
-Sibyelle Peter
-(sibyelle.peter@fhnw.ch)
-a|
-* Verwaltung über das Projekt
-* Gibt allgemeine Anforderungen
-a|
-* Will, dass die https://fhnw-projecttrack.atlassian.net/l/cp/azuAnzR2[Allgemeine Anforderungen] an die Projekte eingehalten werden
-|===
+Unsere wichtigste Stakeholders sind auf https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/63900603/Stakeholder+Management[Confluence] in Form einer Tabelle dargestellt.
 
 == Externe Hilfe
 
