@@ -8,7 +8,12 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 ****
 
 
-==== Technische Randbedingungen 
+****
+
+=== Randbedingungen
+
+[role="arc42help"]
+****
 
 [cols="1,2",options="header"]
 |===
