@@ -4,8 +4,30 @@
 [role="arc42help"]
 ****
 .Inhalt
-Randbedingungen und Vorgaben, die ihre Freiheiten bezüglich Entwurf, Implementierung oder Ihres Entwicklungsprozesses einschränken.
-Diese Randbedingungen gelten manchmal organisations- oder firmenweit über die Grenzen einzelner Systeme hinweg.
+Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierung und den gesamten Entwicklungsprozess beeinflussen, sind zu beachten. Diese Vorgaben erstrecken sich gelegentlich über die gesamte Organisation oder Firma hinaus und überschreiten die Grenzen einzelner Systeme.
+****
+
+
+==== Technische Randbedingungen 
+
+[cols="1,2",options="header"]
+|===
+| *Software* | *Hintergrund*
+| Realisierung in Java | Das folgende Projekt muss in Java 17.0 realisiert werden. Die Technologie wurde zu Projektbeginn definiert und soll eingehalten werden.
+| Konfigurierbare Parameter | Die Applikation soll so strukturiert werden, dass mögliche Konfigurationen unter fünf Minuten errichtet werden können.
+| Autostart | Beim Booten des Raspberry Pi startet das Spiel ohne Aufruf des Benutzers. Dafür muss die Konfiguration des Raspberry Pi angepasst werden.
+| Spieldauer | Die Spieldauer soll nicht die Drei-Minuten Grenze überschreiten. Bei längerer Spieldauer verfällt die Motivation das Spiel zu Ende zu spielen. 
+| Mehrsprachigkeit | Texte sollen nicht hard coded eingebettet werden, um ein multilingualles Spielerlebnis zu ermöglichen. Die Auswahl soll innerhalb der Applikation stattfinden oder zumindest in einem klar definierten Konfigurationsort.
+
+|===
+
+[cols="1,2",options="header"]
+|===
+| *Hardware* | *Hintergrund*
+| Raspberry Pi | Als Hardwareplattform wurde vom Auftraggeber ein Raspberry Pi inklusive diverse Hardware als Unterstützung. Die Softwareentwicklung und Implementierung sollten darauf ausgerichtet sein, die Funktionalität unter Verwendung der Raspberry Pi-Architektur zu optimieren. 
+| Mobilität | Der Arcade-Kasten soll sich zum Transportieren eignen, da kein definitiver Standort der Hardware definiert ist. Zudem soll der Transport von einer bis maximal zwei Personen erfolgt werden können. 
+|Zugänglichkeit   | Der Kasten soll so konstruiert sein, dass mittels Maus und Tastatur eine physische Verbindung aufgebaut werden kann. Anschlüsse sollen von aussen erreichbar sein. Ausserdem soll der Zugang zum Inneren des Kastens möglich sein, was verschraubungen nur bedingt möglich machen.
+|===
 
 .Motivation
 Für eine tragfähige Architektur sollten Sie genau wissen, wo Ihre Freiheitsgrade bezüglich der Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
