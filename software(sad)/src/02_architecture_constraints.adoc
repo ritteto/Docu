@@ -1,19 +1,16 @@
 [[section-architecture-constraints]]
-== Randbedingungen
+==          Randbedingungen
 
 [role="arc42help"]
 ****
-.Inhalt
 Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierung und den gesamten Entwicklungsprozess beeinflussen, sind zu beachten. Diese Vorgaben erstrecken sich gelegentlich über die gesamte Organisation oder Firma hinaus und überschreiten die Grenzen einzelner Systeme.
 ****
 
-
-****
-
-=== Randbedingungen
+=== Software
 
 [role="arc42help"]
 ****
+
 
 [cols="1,2",options="header"]
 |===
@@ -26,6 +23,13 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 
 |===
 
+****
+
+=== Hardware
+
+[role="arc42help"]
+****
+
 [cols="1,2",options="header"]
 |===
 | *Hardware* | *Hintergrund*
@@ -33,6 +37,44 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 | Mobilität | Der Arcade-Kasten soll sich zum Transportieren eignen, da kein definitiver Standort der Hardware definiert ist. Zudem soll der Transport von einer bis maximal zwei Personen erfolgt werden können. 
 |Zugänglichkeit   | Der Kasten soll so konstruiert sein, dass mittels Maus und Tastatur eine physische Verbindung aufgebaut werden kann. Anschlüsse sollen von aussen erreichbar sein. Ausserdem soll der Zugang zum Inneren des Kastens möglich sein, was verschraubungen nur bedingt möglich machen.
 |===
+****
+
+=== Organisatorische Randbedingungen
+
+[role="arc42help"]
+****
+
+[cols="1,2",options="header"]
+|===
+|Bedingung| Hintergrund
+|Arc42| Die Entwicklung erfolgt unter Berücksichtigung von Risiken in einem iterativen und inkrementellen Ansatz. Zur Dokumentation der Architektur wird die Struktur und Methodik von arc42 verwendet. Die Erstellung einer Architekturdokumentation gemäß dieser Vorlage stellt ein wesentliches Ergebnis des Projekts dar.
+||
+|===
+****
+
+=== Konventionen
+
+[role="arc42help"]
+****
+[cols="1,2",options="header"]
+|===
+|Konvetion| Hintergrund
+||
+||
+|===
+****
+
+=== Politische Randbedingungen
+
+[role="arc42help"]
+****
+[cols="1,2",options="header"]
+|===
+|Bedingung| Hintergrund
+||
+||
+|===
+****
 
 .Motivation
 Für eine tragfähige Architektur sollten Sie genau wissen, wo Ihre Freiheitsgrade bezüglich der Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
