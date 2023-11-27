@@ -5,19 +5,21 @@
 ****
 Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierung und den gesamten Entwicklungsprozess beeinflussen, sind zu beachten. Diese Vorgaben erstrecken sich gelegentlich über die gesamte Organisation oder Firma hinaus und überschreiten die Grenzen einzelner Systeme.
 ****
-
-=== Software
+=== Technische Randbedingungen
+[role="arc42help"]
+****
+****
+==== Software
 
 [role="arc42help"]
 ****
-
-
 [cols="1,2",options="header"]
 |===
 | *Software* | *Hintergrund*
 | Realisierung in Java | Das folgende Projekt muss in Java 17.0 realisiert werden. Die Technologie wurde zu Projektbeginn definiert und soll eingehalten werden.
 | Konfigurierbare Parameter | Die Applikation soll so strukturiert werden, dass mögliche Konfigurationen unter fünf Minuten errichtet werden können.
 | Autostart | Beim Booten des Raspberry Pi startet das Spiel ohne Aufruf des Benutzers. Dafür muss die Konfiguration des Raspberry Pi angepasst werden.
+|Konfiguration| Die Konfiguration der Anwendung erfolgt mithilfe von java.util.Properties. Die zugehörige Konfigurationsdatei muss zwingend den Namen "app.properties" tragen und im Default-Package abgelegt werden. Es wird ausdrücklich die Plain-Text-Variante bevorzugt, wohingegen die XML-Variante nicht zugelassen ist.  
 | Spieldauer | Die Spieldauer soll nicht die Drei-Minuten Grenze überschreiten. Bei längerer Spieldauer verfällt die Motivation das Spiel zu Ende zu spielen. 
 | Mehrsprachigkeit | Texte sollen nicht hard coded eingebettet werden, um ein multilingualles Spielerlebnis zu ermöglichen. Die Auswahl soll innerhalb der Applikation stattfinden oder zumindest in einem klar definierten Konfigurationsort.
 
@@ -25,7 +27,7 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 
 ****
 
-=== Hardware
+==== Hardware
 
 [role="arc42help"]
 ****
@@ -48,7 +50,8 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 |===
 |Bedingung| Hintergrund
 |Arc42| Die Entwicklung erfolgt unter Berücksichtigung von Risiken in einem iterativen und inkrementellen Ansatz. Zur Dokumentation der Architektur wird die Struktur und Methodik von arc42 verwendet. Die Erstellung einer Architekturdokumentation gemäß dieser Vorlage stellt ein wesentliches Ergebnis des Projekts dar.
-||
+|Budget| Das Projekt erhält ein finanzielles Budget von 200 CHF. Die Beschaffung von Hardware und Materialien sollte daher dieses Limit nicht überschreiten. Bei Bedarf könnte mittels einem Antrag betrachtet werden, ob das Budget angehoben werden darf oder nicht.
+|Zeitlich bedingte Beschränkung| Eins bis zwei Wochen vor dem Abschlussevent erfolgt die Abnahme des Projekts, die Dokumentation spätestens eine Woche vor Übergangstermin.
 |===
 ****
 
@@ -59,11 +62,12 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 [cols="1,2",options="header"]
 |===
 |Konvetion| Hintergrund
-||
-||
+|https://gitlab.fhnw.ch/ip12-23vt/ip12-23vt_wegwerfgesellschaft/docu/-/blob/main/coding_conventions.adoc?ref_type=heads[Coding Conventions]| Im Rahmen dieses Projekts sind spezifische Coding Conventions verbindlich, die die Grundlage für die Softwareentwicklung bilden. Diese Konventionen dienen dazu, ein einheitliches und leicht wartbares Codebase zu gewährleisten.
+|Source Code Verwaltung| Es wird ein VCS, also eine Source Code Verwaltung, verwendet, um die Datensicherheit, Nachvollziehbarkeit, Versionierbarkeit und Zusammenführbarkeit von Versionen zu gewährleisten.
 |===
 ****
 
+// TODO: Unsicher, ob welche für dieses Projekt existieren. Herausfinden im Plenum
 === Politische Randbedingungen
 
 [role="arc42help"]
@@ -71,22 +75,11 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 [cols="1,2",options="header"]
 |===
 |Bedingung| Hintergrund
-||
-||
 |===
 ****
-
+////
 .Motivation
 Für eine tragfähige Architektur sollten Sie genau wissen, wo Ihre Freiheitsgrade bezüglich der Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
 Sie können Randbedingungen vielleicht noch verhandeln, zunächst sind sie aber da.
-
-.Form
-Einfache Tabellen der Randbedingungen mit Erläuterungen.
-Bei Bedarf unterscheiden Sie technische, organisatorische und politische Randbedingungen oder übergreifende Konventionen (beispielsweise Programmier- oder Versionierungsrichtlinien, Dokumentations- oder Namenskonvention).
-
-
-.Weiterführende Informationen
-
-Siehe https://docs.arc42.org/section-2/[Randbedingungen] in der online-Dokumentation (auf Englisch!).
 
 ****
