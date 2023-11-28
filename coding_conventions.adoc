@@ -2,8 +2,52 @@
 
 == Verwendete Konventionen
 
-_Beschreiben Sie hier, welche Konventionen sie verwenden wollen. Sie können auch auf bestehende verlinken._
+Die Einhaltung branchenüblicher Code Conventions ist von entscheidender Bedeutung, um die Lesbarkeit, Wartbarkeit und Konsistenz des Quellcodes zu gewährleisten.
+Im Folgenden sind die wichtigsten Konventionen aufgeführt, die in unserem Entwicklungsprojekt befolgt werden sollten:
+
+== Namenskonventionen:
+****
+* Packagenamen werden immer in Kleinbuchstaben geschrieben.
+* Klassennamen folgen dem CamelCase-Stil.
+* Variablennamen verwenden den drinkingCamelCase-Stil.
+* Konstanten und Enums werden ausschließlich in GROSSBUCHSTABEN geschrieben.
+****
+== Einrückung:
+****
+* Die Einrückung erfolgt mit 1 Tabulator oder 4 Leerschlägen pro Block.
+* Es wird darauf geachtet, keine Mehrfachdeklarationen pro Zeile zuzulassen.
+* Die öffnende Klammer befindet sich auf der vorherigen Zeile, während die schließende Klammer auf einer neuen Zeile platziert wird.
+****
+== Leerzeichen:
+****
+* Leerzeichen werden gemäß den allgemeinen Konventionen gehandhabt, um die Klarheit zu verbessern.
+* Insbesondere bei Operatoren und nach Kommas wird darauf geachtet, angemessene Leerzeichen zu setzen.
+****
+== Zeilenlänge:
+****
+* Jede Zeile im Code sollte eine maximale Länge von 120 Zeichen nicht überschreiten. Dies trägt dazu bei, einen horizontalen Scrollen zu vermeiden und die Codeansicht lesbar zu gestalten.
+****
+== Verkettungen:
+****
+* Verkettungen werden auf neue Zeilen umgebrochen, um eine bessere Lesbarkeit zu gewährleisten.
+* Die neue Zeile beginnt mit einer Einrückung von 8 Leerzeichen, um die Struktur der Verkettung hervorzuheben.
+****
+Die Beachtung dieser Konventionen ist wesentlich für die Codequalität und erleichtert die Zusammenarbeit im Entwicklungsteam. Durch die Einheitlichkeit im Codestil wird nicht nur die Wartbarkeit verbessert, sondern auch die Lesbarkeit für alle Entwickler im Projekt gewährleistet.
+
 
 == Sicherstellung der Einhaltung der Konventionen
 
-_Beschreiben Sie hier, wie sie sicherstellen wollen, dass die Konventionen eingehalten werden. z.B. Hinterlegen in IntelliJ, Code Reviews, ..._
+Die Sicherstellung der Einhaltung von Code-Konventionen ist von grundlegender Bedeutung für die Qualität und Wartbarkeit von Softwareprojekten. Zwei effektive Ansätze, um diese Einhaltung zu gewährleisten, sind Code-Reviews sowie Schulungen und Dokumentation.
+
+== Code-Reviews:
+****
+Code-Reviews sind ein kritischer Schritt im Entwicklungsprozess, bei dem Teammitglieder den geschriebenen Code überprüfen. Dieser Prozess bietet eine hervorragende Gelegenheit, sicherzustellen, dass Code-Konventionen eingehalten werden. Während des Reviews können Teammitglieder auf spezifische Konventionen hinweisen und etwaige Abweichungen besprechen. Dies fördert nicht nur die Einhaltung der Konventionen, sondern ermöglicht auch den Wissensaustausch im Team. Die gemeinsame Überprüfung trägt dazu bei, konsistente Standards im gesamten Codebase zu etablieren.
+****
+== Schulungen und Dokumentation:
+****
+Um sicherzustellen, dass das Team mit den geltenden Code-Konventionen vertraut ist, ist eine klare Schulung und Dokumentation unerlässlich. Schulungen können in Form von Workshops oder Schulungssitzungen durchgeführt werden, um die Bedeutung der Konventionen zu erklären und ihre Anwendung zu demonstrieren. Eine gut strukturierte Dokumentation sollte die Code-Konventionen detailliert beschreiben und Richtlinien für die Umsetzung bieten. Dies dient nicht nur als Nachschlagewerk, sondern auch als Orientierung für neue Teammitglieder.
+****
+Die Kombination von Code-Reviews und Schulungen schafft eine positive Dynamik für die Einhaltung von Code-Konventionen. Code-Reviews bieten eine praktische Überprüfung, während Schulungen und Dokumentation die theoretische Grundlage und das Verständnis für die Konventionen fördern. Durch diese integrierte Herangehensweise wird die Wahrscheinlichkeit erhöht, dass das Team die Konventionen nicht nur befolgt, sondern auch als integralen Bestandteil des Entwicklungsprozesses betrachtet.
+
+
+
