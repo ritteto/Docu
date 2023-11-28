@@ -5,29 +5,29 @@
 Die Einhaltung branchenüblicher Code Conventions ist von entscheidender Bedeutung, um die Lesbarkeit, Wartbarkeit und Konsistenz des Quellcodes zu gewährleisten.
 Im Folgenden sind die wichtigsten Konventionen aufgeführt, die in unserem Entwicklungsprojekt befolgt werden sollten:
 
-== Namenskonventionen:
+=== Namenskonventionen:
 ****
 * Packagenamen werden immer in Kleinbuchstaben geschrieben.
 * Klassennamen folgen dem CamelCase-Stil.
 * Variablennamen verwenden den drinkingCamelCase-Stil.
 * Konstanten und Enums werden ausschließlich in GROSSBUCHSTABEN geschrieben.
 ****
-== Einrückung:
+=== Einrückung:
 ****
 * Die Einrückung erfolgt mit 1 Tabulator oder 4 Leerschlägen pro Block.
 * Es wird darauf geachtet, keine Mehrfachdeklarationen pro Zeile zuzulassen.
 * Die öffnende Klammer befindet sich auf der vorherigen Zeile, während die schließende Klammer auf einer neuen Zeile platziert wird.
 ****
-== Leerzeichen:
+=== Leerzeichen:
 ****
 * Leerzeichen werden gemäß den allgemeinen Konventionen gehandhabt, um die Klarheit zu verbessern.
 * Insbesondere bei Operatoren und nach Kommas wird darauf geachtet, angemessene Leerzeichen zu setzen.
 ****
-== Zeilenlänge:
+=== Zeilenlänge:
 ****
 * Jede Zeile im Code sollte eine maximale Länge von 120 Zeichen nicht überschreiten. Dies trägt dazu bei, einen horizontalen Scrollen zu vermeiden und die Codeansicht lesbar zu gestalten.
 ****
-== Verkettungen:
+=== Verkettungen:
 ****
 * Verkettungen werden auf neue Zeilen umgebrochen, um eine bessere Lesbarkeit zu gewährleisten.
 * Die neue Zeile beginnt mit einer Einrückung von 8 Leerzeichen, um die Struktur der Verkettung hervorzuheben.
@@ -41,15 +41,68 @@ sind klare Versionierungskonventionen notwendig.
 
 Für Versionierungskonventionen siehe https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/66256912/Software+Projekt+Management+Plan+SPMP+23#%F0%9F%97%93-Releases[Releases]
 
+== Gitlab Konventionen
+Bei Änderungen im Gitlab-Repository muss eine Richtlinie eingehalten werden, damit der Verlauf des Projektes übersichtlich und nachvollziehbar bleibt.
+Somit wird die Problemfindung und Problemlösung deutlich effizienter durchgeführt. Folgende Konventionen gelten für das Projekt:
+
+=== Git Push Konventionen
+
+Die Einhaltung von klaren Konventionen beim Pushen von Änderungen auf Git ist entscheidend, um eine konsistente und effiziente Zusammenarbeit im Entwicklerteam sicherzustellen. Hier sind einige gängige Konventionen:
+
+=== Branch-Namenskonventionen:
+
+Verwende aussagekräftige Namen für Branches, die den Zweck der Änderungen widerspiegeln. Typische Namen sind beispielsweise "feature/...", "bugfix/...", oder "hotfix/...".
+
+=== Commit-Nachrichten:
+
+Schreibe klare, prägnante Commit-Nachrichten. Verwende den Imperativ für Commit-Nachrichten ("Füge Funktion hinzu" statt "Füge Funktion hinzu" hinzugefügt"). Beginne die Nachricht mit einer aussagekräftigen Überschrift, gefolgt von einer detaillierten Beschreibung.
+
+   Beispiel:
+   [source,shell]
+   ----
+   feat: Füge Benutzerauthentifizierung hinzu
+
+   Implementiert die Benutzerauthentifizierung mithilfe von OAuth 2.0.
+   ----
+
+==== Verwendung von Präfixen:
+
+Verwende Präfixe in der Commit-Überschrift, um den Typ der Änderung anzugeben. Gängige Präfixe sind "feat" für neue Features, "fix" für Fehlerbehebungen und "docs" für Dokumentation.
+
+   Beispiel:
+   [source,shell]
+   ----
+   feat: Implementiere benutzerdefinierte Validierungsfunktion
+   fix: Behebe Fehler in der Datenbankverbindung
+   docs: Aktualisiere Benutzerhandbuch für Version 2.0
+   ----
+
+==== Maximale Zeilenlänge
+
+Begrenze die Zeilenlänge der Commit-Überschrift auf etwa 50 bis 72 Zeichen, um eine bessere Lesbarkeit zu gewährleisten.
+
+=== Feature Branches und Pull Requests:
+
+Verwende separate Branches für neue Funktionen oder Bugfixes. Erstelle vor dem Zusammenführen (merge) von Feature Branches Pull Requests, um Änderungen zu überprüfen und zu diskutieren.
+
+=== Rebase statt Merge:
+
+Verwende "git rebase" anstelle von "git merge", um die Git-Historie sauber zu halten. Dadurch werden die Commits auf dem Feature Branch in den aktuellen Stand des Hauptbranches integriert.
+
+=== Force Push Vermeiden:
+
+Vermeide Force Push auf Branches, die von anderen geteilt werden. Force Push kann die Geschichte ändern und zu Konflikten führen.
+
+
 == Sicherstellung der Einhaltung der Konventionen
 
 Die Sicherstellung der Einhaltung von Code-Konventionen ist von grundlegender Bedeutung für die Qualität und Wartbarkeit von Softwareprojekten. Zwei effektive Ansätze, um diese Einhaltung zu gewährleisten, sind Code-Reviews sowie Schulungen und Dokumentation.
 
-== Code-Reviews:
+=== Code-Reviews:
 ****
 Code-Reviews sind ein kritischer Schritt im Entwicklungsprozess, bei dem Teammitglieder den geschriebenen Code überprüfen. Dieser Prozess bietet eine hervorragende Gelegenheit, sicherzustellen, dass Code-Konventionen eingehalten werden. Während des Reviews können Teammitglieder auf spezifische Konventionen hinweisen und etwaige Abweichungen besprechen. Dies fördert nicht nur die Einhaltung der Konventionen, sondern ermöglicht auch den Wissensaustausch im Team. Die gemeinsame Überprüfung trägt dazu bei, konsistente Standards im gesamten Codebase zu etablieren.
 ****
-== Schulungen und Dokumentation:
+=== Schulungen und Dokumentation:
 ****
 Um sicherzustellen, dass das Team mit den geltenden Code-Konventionen vertraut ist, ist eine klare Schulung und Dokumentation unerlässlich. Schulungen können in Form von Workshops oder Schulungssitzungen durchgeführt werden, um die Bedeutung der Konventionen zu erklären und ihre Anwendung zu demonstrieren. Eine gut strukturierte Dokumentation sollte die Code-Konventionen detailliert beschreiben und Richtlinien für die Umsetzung bieten. Dies dient nicht nur als Nachschlagewerk, sondern auch als Orientierung für neue Teammitglieder.
 ****
