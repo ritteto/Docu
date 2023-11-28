@@ -34,6 +34,12 @@ Im Folgenden sind die wichtigsten Konventionen aufgeführt, die in unserem Entwi
 ****
 Die Beachtung dieser Konventionen ist wesentlich für die Codequalität und erleichtert die Zusammenarbeit im Entwicklungsteam. Durch die Einheitlichkeit im Codestil wird nicht nur die Wartbarkeit verbessert, sondern auch die Lesbarkeit für alle Entwickler im Projekt gewährleistet.
 
+== Versionierungskonventionen
+Die korrekte Handhabung von Versionsnummern in Softwareprojekten
+ist entscheidend für eine transparente Entwicklung und eine reibungslose Zusammenarbeit im Team. Um sicherzustellen, dass Versionsnummern einheitlich und sinnvoll vergeben werden,
+sind klare Versionierungskonventionen notwendig.
+
+Für Versionierungskonventionen siehe https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/66256912/Software+Projekt+Management+Plan+SPMP+23#%F0%9F%97%93-Releases[Releases]
 
 == Sicherstellung der Einhaltung der Konventionen
 
