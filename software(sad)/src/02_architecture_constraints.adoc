@@ -66,20 +66,3 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 |Source Code Verwaltung| Es wird ein VCS, also eine Source Code Verwaltung, verwendet, um die Datensicherheit, Nachvollziehbarkeit, Versionierbarkeit und Zusammenführbarkeit von Versionen zu gewährleisten.
 |===
 ****
-
-// TODO: Unsicher, ob welche für dieses Projekt existieren. Herausfinden im Plenum
-=== Politische Randbedingungen
-
-[role="arc42help"]
-****
-[cols="1,2",options="header"]
-|===
-|Bedingung| Hintergrund
-|===
-****
-////
-.Motivation
-Für eine tragfähige Architektur sollten Sie genau wissen, wo Ihre Freiheitsgrade bezüglich der Entwurfsentscheidungen liegen und wo Sie Randbedingungen beachten müssen.
-Sie können Randbedingungen vielleicht noch verhandeln, zunächst sind sie aber da.
-
-****
