@@ -52,6 +52,7 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 |Arc42| Die Entwicklung erfolgt unter Berücksichtigung von Risiken in einem iterativen und inkrementellen Ansatz. Zur Dokumentation der Architektur wird die Struktur und Methodik von arc42 verwendet. Die Erstellung einer Architekturdokumentation gemäß dieser Vorlage stellt ein wesentliches Ergebnis des Projekts dar.
 |Budget| Das Projekt erhält ein finanzielles Budget von 200 CHF. Die Beschaffung von Hardware und Materialien sollte daher dieses Limit nicht überschreiten. Bei Bedarf könnte mittels einem Antrag betrachtet werden, ob das Budget angehoben werden darf oder nicht.
 |Zeitlich bedingte Beschränkung| Eins bis zwei Wochen vor dem Abschlussevent erfolgt die Abnahme des Projekts, die Dokumentation spätestens eine Woche vor Übergangstermin.
+|Ressourcen| Sieben Teammitglieder (Stand: 29.11.23) errichten im ersten Halbjahr je einen Arbeitsaufwand von 180 Stunden, was zu einem totalen Arbeitsaufwand von 1260 Stunden führen sollte.
 |===
 ****
 
