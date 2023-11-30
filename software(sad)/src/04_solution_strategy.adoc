@@ -43,7 +43,7 @@ FXGL, LibGDX und JMonkeyEngine stehen als Auswahl zum Vergleich:
 | Proof of Concept (PoC) | Schnelle Prototypenerstellung für einfache 2D-Spiele | Gute Unterstützung für Prototyping, skalierbar für komplexe Projekte | Eignet sich gut für 3D-Spieleprototypen
 |===
 
-== Top-Level Zerlegung
+=== Top-Level Zerlegung
 
 Die Zerlegung erfolgt mit dem Schichtenmodell. Das Schichtenmodell ist ein altbekanntes Beispiel und wurde anhand von folgenden Punkten evaluiert und ausgewählt:
 
@@ -73,13 +73,13 @@ Das Drei-Schichten-Modell definiert klare Schnittstellen zwischen den Präsentat
 
 ****
 ****
-== Erreichung der wichtigsten Qualitätsanforderungen
+=== Erreichung der wichtigsten Qualitätsanforderungen
 
 Anhand der ausgewählten Technologien und die Klarstellung der Top-Level Zerlegung kann die Erreichung der wichtigsten https://fhnw-projecttrack.atlassian.net/wiki/pages/viewpageattachments.action?pageId=63900538&preview=%2F63900538%2F140018003%2FQualit%C3%A4tsanforderungen_v2.0.xlsx[Qualitätsanforderungen] sichergestellt werden. Damit die Anforderung sicher erfüllt ist, wird mit diversen Tests der Zustand überprüft.
 Siehe https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/140476445/Testmanagement[Testmanagement]
 
 
-== Entwicklungsprozesse und Aufgabenbestimmung
+=== Entwicklungsprozesse und Aufgabenbestimmung
 
 Die verwendete Projektmethode RUP definiert als Entwicklungsphase die https://de.wikipedia.org/wiki/Rational_Unified_Process#Construction["Construction Phase"]. Bedeutend dafür sind das Erfüllen der Meilensteine, welche den Fortschritt des Projekts festhalten.
 
