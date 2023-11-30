@@ -3,6 +3,7 @@
 
 [role="arc42help"]
 ****
+****
 [cols="1,2",options="header"]
 |===
 |Technologie|Begründung
