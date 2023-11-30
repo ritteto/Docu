@@ -3,13 +3,6 @@
 
 [role="arc42help"]
 ****
-.Inhalt
-Kurzer Überblick über die grundlegenden Entscheidungen und Lösungsansätze, die Entwurf und Implementierung des Systems prägen.
-Hierzu gehören:
-
-* relevante organisatorische Entscheidungen, beispielsweise für bestimmte Entwicklungsprozesse oder Delegation bestimmter Aufgaben an andere Stakeholder.
-
-****
 [cols="1,2",options="header"]
 |===
 |Technologie|Begründung
