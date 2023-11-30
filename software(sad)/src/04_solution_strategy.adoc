@@ -105,4 +105,4 @@ Aus diesen Punkten wurde ein folgendes Vorgehen erstellt:
 . Abschluss:
     - Schlussbesprechung: Bevor eine neue Iteration beginnt, blickt man auf die abgeschlossene Iteration zurück. Es werden Erfolge als auch Misserfolge evaluiert, die nächsten Schritte besprochen und falls nötig werden alte Arbeitspakete in die nächste Iteration definiert.
 
-image::../../../docu/software(sad)/images/Vorgehen.png[Ablauf grafisch dargestellt]
+image::../../software(sad)/images/Vorgehen.png[Ablauf grafisch dargestellt]
