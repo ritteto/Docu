@@ -111,18 +111,4 @@ Aus diesen Punkten wurde ein folgendes Vorgehen erstellt:
 . Abschluss:
     - Schlussbesprechung: Bevor eine neue Iteration beginnt, blickt man auf die abgeschlossene Iteration zurück. Es werden Erfolge als auch Misserfolge evaluiert, die nächsten Schritte besprochen und falls nötig werden alte Arbeitspakete in die nächste Iteration definiert.
 
-
-****
-.Motivation
-Von ihnen hängen viele weitere Entscheidungen oder Implementierungsregeln ab.
-
-.Form
-Fassen Sie die zentralen Entwurfsentscheidungen *kurz* zusammen.
-Motivieren Sie, ausgehend von Aufgabenstellung, Qualitätszielen und Randbedingungen, was Sie entschieden haben und warum Sie so entschieden haben.
-Vermeiden Sie redundante Beschreibungen und verweisen Sie eher auf weitere Ausführungen in Folgeabschnitten.
-
-.Weiterführende Informationen
-
-Siehe https://docs.arc42.org/section-4/[Lösungsstrategie] in der online-Dokumentation (auf Englisch!).
-
-****
+image::{docdir}/../images/Vorgehen.png[]
