@@ -41,6 +41,83 @@ sind klare Versionierungskonventionen notwendig.
 
 Für Versionierungskonventionen siehe https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/66256912/Software+Projekt+Management+Plan+SPMP+23#%F0%9F%97%93-Releases[Releases]
 
+== Code Komplexität
+
+=== Klassengrösse:
+Die Klassengröße ist eine Metrik, die die Anzahl der Zeilen Code in einer Klasse misst. Es wird oft empfohlen, Klassen auf eine moderate Größe zu beschränken, um die Lesbarkeit zu verbessern und sicherzustellen, dass jede Klasse eine klare und begrenzte Verantwortung hat. Zum Beispiel könnte festgelegt werden, dass Klassen nicht größer als 300 Zeilen sein sollten. GitLab kann so konfiguriert werden, dass es diese Grenze überwacht und bei Überschreitung Warnungen oder Fehler generiert.
+
+=== Methodengrösse:
+Die Größe von Methoden ist eine ähnliche Metrik, die die Anzahl der Zeilen Code in einer Methode misst. Kurze und fokussierte Methoden sind in der Regel einfacher zu verstehen und zu warten. Eine gängige Empfehlung ist beispielsweise, dass Methoden weniger als 25 Zeilen Code haben sollten. GitLab kann so eingestellt werden, dass es die Einhaltung dieser Regel überprüft und Feedback gibt, wenn eine Methode zu umfangreich wird.
+
+=== Verschachtelungstiefe:
+Die zyklomatische Komplexität ist eine Maßzahl für die Strukturkomplexität des Codes und misst die Anzahl der unabhängigen Pfade durch den Code. Eine niedrige zyklomatische Komplexität wird oft als Zeichen für gut strukturierten Code betrachtet. Zum Beispiel könnte festgelegt werden, dass die maximale Verschachtelungstiefe im Code nicht mehr als 3 betragen sollte. GitLab kann Tools integrieren, die diese Metrik analysieren und sicherstellen, dass die Komplexität im akzeptablen Bereich bleibt.
+
+
+== Dokumentation mit JavaDoc
+JavaDoc ist eine standardisierte Dokumentationsmethode für Java-Code. Jede Klasse sollte mindestens einen Klassenheader haben, der die Zuständigkeit und den Verwendungszweck der Klasse beschreibt. Dieser Header sollte mit JavaDoc-Kommentaren formatiert sein, um automatisch generierte Dokumentation zu unterstützen.
+
+----
+* Beschreibt die Funktionalität der Klasse XYZ.
+* Diese Klasse ist verantwortlich für ...
+* Weitere Details und Verwendungszwecke.
+*/
+public class XYZ {
+// Klasse implementieren
+}
+----
+
+=== Kommentare in Code-Blöcken
+Kommentare in Codeblöcken sollten sparsam, aber informativ sein. Sie sollten verwendet werden, um komplexe Algorithmen, ungewöhnliche Entscheidungen oder nicht offensichtliche Absichten zu erklären.
+----
+public void processData() {
+    // Iteriere über die Daten und führe Verarbeitungsschritte durch
+    for (Data data : dataList) {
+        // Verarbeitungsschritte für jedes Datenobjekt
+        processSingleData(data);
+    }
+}
+----
+
+== Organisation
+
+=== Packages
+Die Software sollte in fachlichen Packages organisiert sein, um eine klare Struktur und Trennung zwischen verschiedenen Funktionalitäten zu schaffen. Dies fördert eine leicht verständliche Codebasis und unterstützt die Wartbarkeit.
+----
+com.example.application
+    ├── controller
+    │   ├── UserController.java
+    │   └── ...
+    ├── service
+    │   ├── UserService.java
+    │   └── ...
+    ├── model
+    │   ├── UserModel.java
+    │   └── ...
+    └── ...
+----
+
+== Trennung von Zuständigkeiten
+
+Die Trennung von Zuständigkeiten ist ein grundlegendes Prinzip der Softwarearchitektur. Jede Klasse oder Methode sollte eine klare und abgegrenzte Aufgabe haben. Dies erleichtert die Wartung, Erweiterung und Wiederverwendbarkeit des Codes.
+
+----
+public class OrderService {
+    public void placeOrder(Order order) {
+        // Logik zur Auftragsabwicklung
+        validateOrder(order);
+        calculateTotal(order);
+        saveOrderToDatabase(order);
+        sendOrderConfirmation(order);
+    }
+
+    private void validateOrder(Order order) {
+        // Validierungsschritte für den Auftrag
+    }
+
+    // Weitere private Methoden für spezifische Aufgaben
+}
+----
+
 == Gitlab Konventionen
 Bei Änderungen im Gitlab-Repository muss eine Richtlinie eingehalten werden, damit der Verlauf des Projektes übersichtlich und nachvollziehbar bleibt.
 Somit wird die Problemfindung und Problemlösung deutlich effizienter durchgeführt. Folgende Konventionen gelten für das Projekt:
@@ -84,10 +161,6 @@ Begrenze die Zeilenlänge der Commit-Überschrift auf etwa 50 bis 72 Zeichen, um
 === Feature Branches und Pull Requests:
 
 Verwende separate Branches für neue Funktionen oder Bugfixes. Erstelle vor dem Zusammenführen (merge) von Feature Branches Pull Requests, um Änderungen zu überprüfen und zu diskutieren.
-
-=== Rebase statt Merge:
-
-Verwende "git rebase" anstelle von "git merge", um die Git-Historie sauber zu halten. Dadurch werden die Commits auf dem Feature Branch in den aktuellen Stand des Hauptbranches integriert.
 
 === Force Push Vermeiden:
 
