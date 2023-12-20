@@ -128,7 +128,7 @@ Die Einhaltung von klaren Konventionen beim Pushen von Änderungen auf Git ist e
 
 === Branch-Namenskonventionen:
 
-Verwende aussagekräftige Namen für Branches, die den Zweck der Änderungen widerspiegeln. Typische Namen sind beispielsweise "feature/...", "bugfix/...", oder "hotfix/...".
+Die vorgeschlagene Namenskonvention für Branches in Softwareprojekten sieht vor, dass der Branchname identisch mit dem vollständigen Feature-Namen ist, der das Feature umfassend beschreibt. Beispielsweise wäre der Branchname für ein Feature `R1.4-GegenstandFälltZufällig-AufEntsorgungsstelle`. Für Bugfixes oder Hotfixes wird dieser vollständige Feature-Name beibehalten, jedoch ein entsprechendes Präfix hinzugefügt, um den Typ des Branches zu kennzeichnen. So würde ein Branch für einen Bugfix zum oben genannten Feature beispielsweise `bugfix/R1.4-GegenstandFälltZufällig-AufEntsorgungsstelle` lauten, während ein Hotfix entsprechend `hotfix/R1.4-GegenstandFälltZufällig-AufEntsorgungsstelle` benannt würde. Diese Konvention stellt sicher, dass der Zweck jedes Branches klar erkennbar ist, während gleichzeitig die Einheitlichkeit und Nachvollziehbarkeit der Branch-Namen gewahrt bleibt.
 
 === Commit-Nachrichten:
 
