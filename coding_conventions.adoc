@@ -132,39 +132,37 @@ Die vorgeschlagene Namenskonvention für Branches in Softwareprojekten sieht vor
 
 === Commit-Nachrichten:
 
-Schreibe klare, prägnante Commit-Nachrichten. Verwende den Imperativ für Commit-Nachrichten ("Füge Funktion hinzu" statt "Füge Funktion hinzu" hinzugefügt"). Beginne die Nachricht mit einer aussagekräftigen Überschrift, gefolgt von einer detaillierten Beschreibung.
+Schreibe klare, prägnante Commit-Nachrichten, die auf Englisch geschreiben sind. Beginne die Nachricht mit einer aussagekräftigen Überschrift, gefolgt von einer detaillierten Beschreibung.
 
-   Beispiel:
-   [source,shell]
-   ----
-   feat: Füge Benutzerauthentifizierung hinzu
 
-   Implementiert die Benutzerauthentifizierung mithilfe von OAuth 2.0.
-   ----
+   feat: Add User Authentication
+   Implements user authentication using OAuth 2.0.
+
 
 ==== Verwendung von Präfixen:
 
 Verwende Präfixe in der Commit-Überschrift, um den Typ der Änderung anzugeben. Gängige Präfixe sind "feat" für neue Features, "fix" für Fehlerbehebungen und "docs" für Dokumentation.
 
-   Beispiel:
-   [source,shell]
-   ----
-   feat: Implementiere benutzerdefinierte Validierungsfunktion
-   fix: Behebe Fehler in der Datenbankverbindung
-   docs: Aktualisiere Benutzerhandbuch für Version 2.0
-   ----
+   feat: Implement Custom Validation Function
+    Adds a new custom validation function for improved data verification.
+   fix: Fix Issue in Database Connection
+    Resolves a specific issue affecting the stability of the database connection.
+   docs: Update User Manual for Version 2.0
+    Revises the user manual to include instructions and details for version 2.0.
+
 
 ==== Maximale Zeilenlänge
 
 Begrenze die Zeilenlänge der Commit-Überschrift auf etwa 50 bis 72 Zeichen, um eine bessere Lesbarkeit zu gewährleisten.
 
-=== Feature Branches und Pull Requests:
+=== Feature Branches und Merge Requests:
 
-Verwende separate Branches für neue Funktionen oder Bugfixes. Erstelle vor dem Zusammenführen (merge) von Feature Branches Pull Requests, um Änderungen zu überprüfen und zu diskutieren.
+Verwende separate Branches für neue Funktionen oder Bugfixes. Erstelle vor dem Zusammenführen (merge) von Feature Branches Merge Requests, um Änderungen zu überprüfen und zu diskutieren.
 
 === Force Push Vermeiden:
 
-Vermeide Force Push auf Branches, die von anderen geteilt werden. Force Push kann die Geschichte ändern und zu Konflikten führen.
+
+Es wird empfohlen, das Ausführen von Force Push auf Branches, die gemeinsam mit anderen Teammitgliedern genutzt werden, zu vermeiden. Der Einsatz von Force Push kann Änderungen in der Versionsgeschichte herbeiführen, was potenziell zu Konflikten innerhalb des Teams führen kann.
 
 
 == Sicherstellung der Einhaltung der Konventionen
