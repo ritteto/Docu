@@ -75,7 +75,7 @@ Das Drei-Schichten-Modell definiert klare Schnittstellen zwischen den Präsentat
 ****
 === Erreichung der wichtigsten Qualitätsanforderungen
 
-Anhand der ausgewählten Technologien und die Klarstellung der Top-Level Zerlegung kann die Erreichung der wichtigsten https://fhnw-projecttrack.atlassian.net/wiki/pages/viewpageattachments.action?pageId=63900538&preview=%2F63900538%2F140018003%2FQualit%C3%A4tsanforderungen_v2.0.xlsx[Qualitätsanforderungen] sichergestellt werden. Damit die Anforderung sicher erfüllt ist, wird mit diversen Tests der Zustand überprüft.
+Anhand der ausgewählten Technologien und die Klarstellung der Top-Level Zerlegung kann die Erreichung der wichtigsten https://fhnw-projecttrack.atlassian.net/wiki/download/attachments/63900538/Qualit%C3%A4tsanforderungen_v3.0.xlsx?api=v2[Qualitätsanforderungen] sichergestellt werden. Damit die Anforderung sicher erfüllt ist, wird mit diversen Tests der Zustand überprüft.
 Siehe https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt6/pages/140476445/Testmanagement[Testmanagement]
 
 
