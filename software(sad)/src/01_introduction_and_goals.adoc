@@ -83,7 +83,7 @@ Testergebnisse mit Jugendlichen, die überprüfen, wie schnell sie das Konzept v
 .Motivation
 Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen.
 Diese Stakeholder bestimmen unter anderem Umfang und Detaillierungsgrad der von Ihnen zu leistenden Arbeit und Ergebnisse.
-
+            w
 [cols="1,1"]
 |===
 |Rolle |Erwartungshaltung
@@ -104,7 +104,7 @@ Bewusstsein der Wegwerfgesellschaft schaffen
 Technische Rahmenbedingungen und Anforderungen erfüllen
 
 |Entwicklungsteam
-|Nachvollziehbarkeit mit Software-Architektur Dokument (SAD)
+|Nachvollziehbarkeit mit Softwaware-Architektur Dokument (SAD)
 +
 Qualität von Source Code erhöhen
 |===
