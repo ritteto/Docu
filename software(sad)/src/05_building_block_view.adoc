@@ -18,7 +18,7 @@ Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu viele Imple
 //.Form
 //Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
 
-== Bausteinsicht
+=== Bausteinsicht
 Die nachfolgende Bausteinsicht zeigt die Struktur des Systems auf und gibt einen Überblick über die Relationen unter den einzelnen Bausteinen. +
 *Diese Bausteinsicht befindet sich noch in Arbeit*
 
