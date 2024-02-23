@@ -39,6 +39,8 @@ image::../../software(sad)/images/05-Layer_1.jpg[Layer1]
 
 image::../../software(sad)/images/05-Layer_2.png[Layer2]
 
+{empty} +
+
 
 .Weiterführende Informationen
 
