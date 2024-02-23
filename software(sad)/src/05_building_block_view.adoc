@@ -15,8 +15,12 @@ Behalten Sie den Überblick über den Quellcode, indem Sie die statische Struktu
 
 Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu viele Implementierungsdetails offenlegen zu müssen.
 
-.Form
-Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
+//.Form
+//Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen (siehe Abbildung unten) und deren Beschreibungen.
+
+.Bausteinsicht
+Die nachfolgende Bausteinsicht zeigt die Struktur des Systems auf und gibt einen Überblick über die Relationen unter den einzelnen Bausteinen. +
+*Diese Bausteinsicht befindet sich noch in Arbeit*
 
 //image::05_building_blocks-DE.png["Hierarchie in der Bausteinsicht"]
 
