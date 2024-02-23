@@ -20,7 +20,7 @@ Die Bausteinsicht ist eine hierarchische Sammlung von Blackboxen und Whiteboxen 
 
 //image::05_building_blocks-DE.png["Hierarchie in der Bausteinsicht"]
 
-{empty}{tab}
+{empty}+
    
 *Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems, zusammen mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
 
