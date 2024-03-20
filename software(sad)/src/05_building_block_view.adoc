@@ -41,14 +41,14 @@ image::../../software(sad)/images/05-Layer_1.jpg[Layer1]
 
 *Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
 
-image::../../software(sad)/images/05-Layer_2.png[Layer2]
+image::../../software(sad)/images/Layer_2.png[Layer2]
 
 {empty} +
 
 
-.Weiterführende Informationen
+//.Weiterführende Informationen
 
-Siehe https://docs.arc42.org/section-5/[Bausteinsicht] in der online-Dokumentation (auf Englisch!).
+//Siehe https://docs.arc42.org/section-5/[Bausteinsicht] //in der online-Dokumentation (auf Englisch!).
 ****
 
 === Whitebox Gesamtsystem
@@ -75,9 +75,18 @@ Im besten Fall kommen Sie mit Beispielen oder einfachen Signaturen zurecht.
 
 _**<Übersichtsdiagramm>**_
 
-Begründung:: _<Erläuternder Text>_
+Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
+Einen weiteren Pluspunkt bietet MVC für das Testing des Codes. Dabei ist erneut die Unabhängigkeit der einzelnen Komponenten von Vorteil.
 
-Enthaltene Bausteine:: _<Beschreibung der enthaltenen Bausteine (Blackboxen)>_
+Enthaltene Bausteine:: 
+
+[cols="1,2,1" options="header"]
+|===
+| **Name** | **Verantwortung** | **Beschreibung**
+| _CatchOrWaste_ | _Bereitstellen der Applikation_ | _<Beschreibung>_
+| _FXGL_ | _Bereitstellung der Game-Library_ | _FXGL stellt dem System Funktionen und Klassen zur Erstellung und modifizierung von Gameobjekten zur Verfügung. Es bietet eine Grundlage zur Entwicklung des Spiels._
+| _Primeo_ | _Bereistellung aktueller Daten zur Ökobilanz von Produkten_ | _Primeo versorgt das System mit aktuellen Daten zur Energiekosten der Produktion der Produkte. Dadurch wird es dem System ermöglicht einen Bezug zur Realität herzustellen. _
+|===
 
 Wichtige Schnittstellen:: _<Beschreibung wichtiger Schnittstellen>_
 
