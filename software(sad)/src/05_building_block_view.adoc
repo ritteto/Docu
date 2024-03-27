@@ -62,24 +62,15 @@ Dieses enthält:
 * Ein Übersichtsdiagramm
 * die Begründung dieser Zerlegung
 * Blackbox-Beschreibungen der hier enthaltenen Bausteine.
-Dafür haben Sie verschiedene Optionen:
-
-** in _einer_ Tabelle, gibt einen kurzen und pragmatischen Überblick über die enthaltenen Bausteine sowie deren Schnittstellen.
-** als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem Blackbox-Template (siehe unten).
-Diese Liste können Sie, je nach Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki) oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
-
-* (optional:) wichtige Schnittstellen, die nicht bereits im Blackbox-Template eines der Bausteine erläutert werden, aber für das Verständnis der Whitebox von zentraler Bedeutung sind.
-Aufgrund der vielfältigen Möglichkeiten oder Ausprägungen von Schnittstellen geben wir hierzu kein weiteres Template vor.
-Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten, Restriktionen, Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten und vieles mehr spezifizieren oder beschreiben.
-Im besten Fall kommen Sie mit Beispielen oder einfachen Signaturen zurecht.
 ****
 
+Übersichtsdiagramm::
 ****
 _<Übersichtsdiagramm>_
 ****
 
-Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
-Einen weiteren Pluspunkt bietet MVC für das Testing des Codes. Dabei ist erneut die Unabhängigkeit der einzelnen Komponenten von Vorteil.
+Begründung:: Das Gesamtsystem wurde in das System CatchOrWaste, welches die eigentliche Game-Applikation enthält, sowie die umgebenden Systeme mit denen das Game interagiert unterteilt. 
+Der Benutzer liefert Eingaben welche vom System CatchOrWaste mithilfe der FXGL-Gamelibrary (grösstenteils) in Visuelle Outputs umgesetzt werden. Primeo stellt dabei sicher, dass die ausgegebenen Daten möglichst realitätsnah sind und dem Benutzer es somit ermöglichen das Game mit der Realität zu verknüpfen und so ein Bewustsein für unsere Wegwerfgesellschaft zu entwickeln. Dem Admin ist es möglich das System CatchOrWaste bei Bedarf zu reparieren oder zu modifizieren.
 
 Enthaltene Bausteine:: 
 
@@ -94,13 +85,12 @@ Enthaltene Bausteine::
 
 |===
 
-Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
-
+Blackboxen::
 
 [cols="1,2,3" options="header"]
 |===
 | **Name** | **Verantwortung** | **Beschreibung**
-| CatchOrWaste | Bereitstellen der Applikation | Das System CatchOrWaste stellt mithilfe der Library von FXGL sowie den Daten von Primeo ein unterhaltsames und lehrreiches Arcade-Game zur Verfügung. Es interagiert dabei auf die Eingaben der Benutzer und verhält sich dem entsprechend.
+| CatchOrWaste | Bereitstellen der Applikation | Das System CatchOrWaste stellt mithilfe der Library von FXGL sowie den Daten von Primeo ein unterhaltsames und lehrreiches Arcade-Game zur Verfügung. Es interagiert dabei auf die Eingaben der Benutzer und verhält sich entsprechend.
 | FXGL | Bereitstellung der Game-Library | FXGL stellt dem System Funktionen und Klassen zur Erstellung und modifizierung von Gameobjekten zur Verfügung. Es bietet eine Grundlage zur Entwicklung des Spiels.
 | Primeo | Bereistellung aktueller Daten zur Ökobilanz von Produkten | Primeo versorgt das System mit aktuellen Daten zur Energiekosten der Produktion der Produkte. Dadurch wird es dem System ermöglicht einen Bezug zur Realität herzustellen.
 |===
@@ -108,6 +98,7 @@ Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
 
 === Ebene 2
 
+Nachfolgend werden der Baustein "CatchOrWaste" als Whitebox mithilfe des Whitebox-Templates beschrieben.
 
 ==== Whitebox _CatchOrWaste_
 
@@ -125,9 +116,11 @@ Enthaltene Bausteine::
 [cols="1,2" options="header"]
 |===
 | **Name** | **Verantwortung**
-| _<Name1>_ | _<Verantwortung1>_
-| _<Name2>_ | _<Verantwortung2>_
-| _<Name3>_ | _<Verantwortung3>_
+| Hardware | Physische Entgegennahme von Userinputs
+| Bildschirm | Visuelle Darstellung der View
+| model | Speicherung und Verwaltung von Daten, Definition von Datenstrukturen
+| view | Handling von Userinput, Darstellung der Daten
+| controller | Modifizierung und Implementierung der Gamelogik
 
 |===
 
@@ -136,9 +129,9 @@ Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 2.
 [cols="1,2,1" options="header"]
 |===
 | **Name** | **Verantwortung** | **Beschreibung**
-| _<Name1>_ | _<Verantwortung1>_ | _<Beschreibung1>_
-| _<Name2>_ | _<Verantwortung2>_ | _<Beschreibung2>_
-| _<Name3>_ | _<Verantwortung3>_ | _<Beschreibung3>_
+| model | Speicherung und Verwaltung von Daten, Definition von Datenstrukturen | Das Model speichert und verwaltet Daten wie zum Beispiel die Positionen von Gameobjekten. Des weiteren enthält es weitere Daten, wie zum Beispiel Konstanten der Backgrounds, sowie dazu passsende Schnittstellen. Diese benötigt der Controller um die Gamelogik richtig umzusetzen.
+| view | Handling von Userinput, Darstellung der Daten | Die View kümmert sich um das Handling der Userinputs welche von der Hardware kommen und gibt diese nach Bedarf weiter. Ausserdem stellt sie mithilfe der Daten aus dem Model entsprechende Visuelle Komponenten dar und gibt diese zur Ausgabe an den Bildschirm weiter.
+| controller | Modifizierung und Implementierung der Gamelogik | Der Controller ist für die Umsetzung der Gamelogik zuständig. Dafür reagiert er auf Inputs des Users (welche nicht in der View bearbeitet werden können) und modifiziert darauf basierend die Daten der Models.
 |===
 
 ==== Whitebox _<Baustein 2>_
