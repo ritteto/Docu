@@ -20,6 +20,7 @@ Damit ermöglichen Sie Kommunikation auf abstrakterer Ebene, ohne zu viele Imple
 
 .Bausteinsicht
 Die nachfolgende Bausteinsicht zeigt die Struktur des Systems auf und gibt einen Überblick über die Relationen unter den einzelnen Bausteinen. +
+{empty} +
 *Diese Bausteinsicht befindet sich noch in Arbeit*
 
 //image::05_building_blocks-DE.png["Hierarchie in der Bausteinsicht"]
@@ -73,102 +74,72 @@ Im schlimmsten Fall müssen Sie Syntax, Semantik, Protokolle, Fehlerverhalten, R
 Im besten Fall kommen Sie mit Beispielen oder einfachen Signaturen zurecht.
 ****
 
-_**<Übersichtsdiagramm>**_
+****
+_<Übersichtsdiagramm>_
+****
 
 Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
 Einen weiteren Pluspunkt bietet MVC für das Testing des Codes. Dabei ist erneut die Unabhängigkeit der einzelnen Komponenten von Vorteil.
 
 Enthaltene Bausteine:: 
 
-[cols="1,2,1" options="header"]
+[cols="1,2" options="header"]
 |===
-| **Name** | **Verantwortung** | **Beschreibung**
-| _CatchOrWaste_ | _Bereitstellen der Applikation_ | _<Beschreibung>_
-| _FXGL_ | _Bereitstellung der Game-Library_ | _FXGL stellt dem System Funktionen und Klassen zur Erstellung und modifizierung von Gameobjekten zur Verfügung. Es bietet eine Grundlage zur Entwicklung des Spiels._
-| _Primeo_ | _Bereistellung aktueller Daten zur Ökobilanz von Produkten_ | _Primeo versorgt das System mit aktuellen Daten zur Energiekosten der Produktion der Produkte. Dadurch wird es dem System ermöglicht einen Bezug zur Realität herzustellen. _
+| **Name** | **Verantwortung**
+| Benutzer | Liefert Input durch Eingaben (Joystick/Buttons) 
+| Admin | Wartet und verbessert das Game 
+| CatchOrWaste | Bereitstellen der Applikation 
+| FXGL | Bereitstellung der Game-Library 
+| Primeo | Bereistellung aktueller Daten zur Ökobilanz von Produkten
+
 |===
 
-Wichtige Schnittstellen:: _<Beschreibung wichtiger Schnittstellen>_
-
-[role="arc42help"]
-****
 Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
 
-Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen darin nur mit Name und Verantwortung nach folgendem Muster beschrieben:
+
+[cols="1,2,3" options="header"]
+|===
+| **Name** | **Verantwortung** | **Beschreibung**
+| CatchOrWaste | Bereitstellen der Applikation | Das System CatchOrWaste stellt mithilfe der Library von FXGL sowie den Daten von Primeo ein unterhaltsames und lehrreiches Arcade-Game zur Verfügung. Es interagiert dabei auf die Eingaben der Benutzer und verhält sich dem entsprechend.
+| FXGL | Bereitstellung der Game-Library | FXGL stellt dem System Funktionen und Klassen zur Erstellung und modifizierung von Gameobjekten zur Verfügung. Es bietet eine Grundlage zur Entwicklung des Spiels.
+| Primeo | Bereistellung aktueller Daten zur Ökobilanz von Produkten | Primeo versorgt das System mit aktuellen Daten zur Energiekosten der Produktion der Produkte. Dadurch wird es dem System ermöglicht einen Bezug zur Realität herzustellen.
+|===
+
+
+=== Ebene 2
+
+
+==== Whitebox _CatchOrWaste_
+
+Übersichtsdiagramm::
+
+****
+_<Übersichtsdiagramm>_
+****
+
+Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
+Einen weiteren Pluspunkt bietet MVC für das Testing des Codes. Dabei ist erneut die Unabhängigkeit der einzelnen Komponenten von Vorteil.
+
+Enthaltene Bausteine:: 
 
 [cols="1,2" options="header"]
 |===
 | **Name** | **Verantwortung**
-| _<Blackbox 1>_ | _<Text>_
-| _<Blackbox 2>_ | _<Text>_
+| _<Name1>_ | _<Verantwortung1>_
+| _<Name2>_ | _<Verantwortung2>_
+| _<Name3>_ | _<Verantwortung3>_
+
 |===
 
-Falls Sie die ausführliche Liste von Blackbox-Beschreibungen wählen, beschreiben Sie jede wichtige Blackbox in einem eigenen Blackbox-Template.
-Dessen Überschrift ist jeweils der Namen dieser Blackbox.
-****
+Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 2.
 
-==== <Name Blackbox 1>
-
-[role="arc42help"]
-****
-Beschreiben Sie die <Blackbox 1> anhand des folgenden Blackbox-Templates:
-
-* Zweck/Verantwortung
-* Schnittstelle(n), sofern diese nicht als eigenständige Beschreibungen herausgezogen sind.
-Hierzu gehören eventuell auch Qualitäts- und Leistungsmerkmale dieser Schnittstelle.
-* (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise Verfügbarkeit, Laufzeitverhalten o. Ä.
-* (Optional) Ablageort/Datei(en)
-* (Optional) Erfüllte Anforderungen, falls Sie Traceability zu Anforderungen benötigen.
-* (Optional) Offene Punkte/Probleme/Risiken
-****
-
-_<Zweck/Verantwortung>_
-
-_<Schnittstelle(n)>_
-
-_<(Optional) Qualitäts-/Leistungsmerkmale>_
-
-_<(Optional) Ablageort/Datei(en)>_
-
-_<(Optional) Erfüllte Anforderungen>_
-
-_<(optional) Offene Punkte/Probleme/Risiken>_
-
-==== <Name Blackbox 2>
-
-_<Blackbox-Template>_
-
-==== <Name Blackbox n>
-
-_<Blackbox-Template>_
-
-
-==== <Name Schnittstelle 1>
-
-...
-
-==== <Name Schnittstelle m>
-
-=== Ebene 2
-
-[role="arc42help"]
-****
-Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 1 als Whitebox.
-
-Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie selbst entscheiden.
-Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
-Skizzieren Sie wichtige, überraschende, riskante, komplexe oder besonders volatile Bausteine.
-Normale, einfache oder standardisierte Teile sollten Sie weglassen.
-****
-
-==== Whitebox _<Baustein 1>_
-
-[role="arc42help"]
-****
-...zeigt das Innenleben von _Baustein 1_.
-****
-
-_<Whitebox-Template>_
+[cols="1,2,1" options="header"]
+|===
+| **Name** | **Verantwortung** | **Beschreibung**
+| _<Name1>_ | _<Verantwortung1>_ | _<Beschreibung1>_
+| _<Name2>_ | _<Verantwortung2>_ | _<Beschreibung2>_
+| _<Name3>_ | _<Verantwortung3>_ | _<Beschreibung3>_
+|===
 
 ==== Whitebox _<Baustein 2>_
 
