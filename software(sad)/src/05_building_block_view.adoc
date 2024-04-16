@@ -144,7 +144,7 @@ Erläuterung::
 
 Übersichtsdiagramm::
 
-image::../../software(sad)/images/model_übersichtsdiagramm.jpg[Übersichtsdiagramm Package model]
+image::../../software(sad)/images/Layer_2.png[Layer2]
 ****
 
 Begründung:: Das model Package enthält die models für verschiedene Entities. Nach dem Prinzip des MVC werden hier Daten gespeichert und verwaltet. Zur besseren Lesbarkeit gibt es weitere Subpackages welche generelle Modelle enthalten. 
