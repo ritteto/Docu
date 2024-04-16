@@ -63,12 +63,12 @@ Dieses enthält:
 * Ein Übersichtsdiagramm
 * die Begründung dieser Zerlegung
 * Blackbox-Beschreibungen der hier enthaltenen Bausteine.
-****
+
 
 Übersichtsdiagramm::
-****
+
 _<Übersichtsdiagramm>_
-****
+
 
 Begründung:: Das Gesamtsystem wurde in das System CatchOrWaste, welches die eigentliche Game-Applikation enthält, sowie die umgebenden Systeme mit denen das Game interagiert unterteilt. Die Game-Applikation stützt sich auf die Library FXGL und bekommt von dort Vorlagen für die Struktur der Applikation sowie die verschiedenen Spielelemente. 
 Der Benutzer liefert Eingaben welche vom System CatchOrWaste mithilfe der FXGL-Gamelibrary (grösstenteils) in Visuelle Outputs umgesetzt werden. Dem Admin ist es möglich das System CatchOrWaste bei Bedarf zu reparieren oder zu modifizieren. 
@@ -94,6 +94,7 @@ Blackboxen::
 | FXGL | Bereitstellung der Game-Library | FXGL stellt dem System Funktionen und Klassen zur Erstellung und modifizierung von Gameobjekten zur Verfügung. Es bietet eine Grundlage zur Entwicklung des Spiels.
 |===
 
+****
 
 === Ebene 2
 
