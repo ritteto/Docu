@@ -69,8 +69,8 @@ Dieses enthält:
 _<Übersichtsdiagramm>_
 ****
 
-Begründung:: Das Gesamtsystem wurde in das System CatchOrWaste, welches die eigentliche Game-Applikation enthält, sowie die umgebenden Systeme mit denen das Game interagiert unterteilt. 
-Der Benutzer liefert Eingaben welche vom System CatchOrWaste mithilfe der FXGL-Gamelibrary (grösstenteils) in Visuelle Outputs umgesetzt werden. Primeo stellt dabei sicher, dass die ausgegebenen Daten möglichst realitätsnah sind und dem Benutzer es somit ermöglichen das Game mit der Realität zu verknüpfen und so ein Bewustsein für unsere Wegwerfgesellschaft zu entwickeln. Dem Admin ist es möglich das System CatchOrWaste bei Bedarf zu reparieren oder zu modifizieren.
+Begründung:: Das Gesamtsystem wurde in das System CatchOrWaste, welches die eigentliche Game-Applikation enthält, sowie die umgebenden Systeme mit denen das Game interagiert unterteilt. Die Game-Applikation stützt sich auf die Library FXGL und bekommt von dort Vorlagen für die Struktur der Applikation sowie die verschiedenen Spielelemente. 
+Der Benutzer liefert Eingaben welche vom System CatchOrWaste mithilfe der FXGL-Gamelibrary (grösstenteils) in Visuelle Outputs umgesetzt werden. Dem Admin ist es möglich das System CatchOrWaste bei Bedarf zu reparieren oder zu modifizieren. 
 
 Enthaltene Bausteine:: 
 
@@ -81,7 +81,6 @@ Enthaltene Bausteine::
 | Admin | Wartet und verbessert das Game 
 | CatchOrWaste | Bereitstellen der Applikation 
 | FXGL | Bereitstellung der Game-Library 
-| Primeo | Bereistellung aktueller Daten zur Ökobilanz von Produkten
 
 |===
 
@@ -90,15 +89,14 @@ Blackboxen::
 [cols="1,2,3" options="header"]
 |===
 | **Name** | **Verantwortung** | **Beschreibung**
-| CatchOrWaste | Bereitstellen der Applikation | Das System CatchOrWaste stellt mithilfe der Library von FXGL sowie den Daten von Primeo ein unterhaltsames und lehrreiches Arcade-Game zur Verfügung. Es interagiert dabei auf die Eingaben der Benutzer und verhält sich entsprechend.
+| CatchOrWaste | Bereitstellen der Applikation | Das System CatchOrWaste stellt mithilfe der Library von FXGL  ein unterhaltsames und lehrreiches Arcade-Game zur Verfügung. Es interagiert dabei auf die Eingaben der Benutzer und verhält sich entsprechend.
 | FXGL | Bereitstellung der Game-Library | FXGL stellt dem System Funktionen und Klassen zur Erstellung und modifizierung von Gameobjekten zur Verfügung. Es bietet eine Grundlage zur Entwicklung des Spiels.
-| Primeo | Bereistellung aktueller Daten zur Ökobilanz von Produkten | Primeo versorgt das System mit aktuellen Daten zur Energiekosten der Produktion der Produkte. Dadurch wird es dem System ermöglicht einen Bezug zur Realität herzustellen.
 |===
 
 
 === Ebene 2
 
-Nachfolgend werden der Baustein "CatchOrWaste" als Whitebox mithilfe des Whitebox-Templates beschrieben.
+Nachfolgend wird der Baustein "CatchOrWaste" als Whitebox mithilfe des Whitebox-Templates beschrieben.
 
 ==== Whitebox _CatchOrWaste_
 
@@ -108,7 +106,7 @@ Nachfolgend werden der Baustein "CatchOrWaste" als Whitebox mithilfe des Whitebo
 _<Übersichtsdiagramm>_
 ****
 
-Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
+Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes, da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
 Einen weiteren Pluspunkt bietet MVC für das Testing des Codes. Dabei ist erneut die Unabhängigkeit der einzelnen Komponenten von Vorteil.
 
 Enthaltene Bausteine:: 
@@ -124,7 +122,7 @@ Enthaltene Bausteine::
 
 |===
 
-Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 2.
+Hier folgen jetzt Erläuterungen zur Blackbox der Ebene 2.
 
 [cols="1,2,1" options="header"]
 |===
@@ -134,38 +132,51 @@ Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 2.
 | controller | Modifizierung und Implementierung der Gamelogik | Der Controller ist für die Umsetzung der Gamelogik zuständig. Dafür reagiert er auf Inputs des Users (welche nicht in der View bearbeitet werden können) und modifiziert darauf basierend die Daten der Models.
 |===
 
-==== Whitebox _<Baustein 2>_
-
-_<Whitebox-Template>_
-
-...
-
-==== Whitebox _<Baustein m>_
-
-_<Whitebox-Template>_
 
 === Ebene 3
 
 [role="arc42help"]
-****
-Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 2 als Whitebox.
 
-Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil von arc42 für die weiteren Ebenen.
-****
 
-==== Whitebox <_Baustein x.1_>
+==== Whitebox _model_
 
-[role="arc42help"]
+Übersichtsdiagramm::
 ****
-...zeigt das Innenleben von _Baustein x.1_.
+_<Übersichtsdiagramm>_
 ****
 
-_<Whitebox-Template>_
+Begründung::
 
-==== Whitebox <_Baustein x.2_>
+Enthaltene Bausteine:: 
 
-_<Whitebox-Template>_
+Erläuterung der Bausteine::
 
-==== Whitebox <_Baustein y.1_>
 
-_<Whitebox-Template>_
+
+==== Whitebox _view_
+
+Übersichtsdiagramm::
+****
+_<Übersichtsdiagramm>_
+****
+
+Begründung::
+
+Enthaltene Bausteine:: 
+
+Erläuterung der Bausteine::
+
+
+
+==== Whitebox _controller_
+
+Übersichtsdiagramm::
+****
+_<Übersichtsdiagramm>_
+****
+
+Begründung::
+
+Enthaltene Bausteine:: 
+
+Erläuterung der Bausteine::
