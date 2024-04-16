@@ -141,9 +141,7 @@ Erläuterung::
 ==== Whitebox _model_
 
 Übersichtsdiagramm::
-****
-_<Übersichtsdiagramm>_
-****
+image::model_übersichtsdiagramm.png["Übersichtsdiagramm des Package model"]
 
 Begründung:: Das model Package enthält die models für verschiedene Entities. Nach dem Prinzip des MVC werden hier Daten gespeichert und verwaltet. Zur besseren Lesbarkeit gibt es weitere Subpackages welche generelle Modelle enthalten. 
 
