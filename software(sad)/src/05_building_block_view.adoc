@@ -38,6 +38,7 @@ Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine der Ebene
 
 image::../../software(sad)/images/05-Layer_1.jpg[Layer1]
 
+
 {empty} +
 
 *Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
@@ -141,9 +142,8 @@ Erläuterung::
 ==== Whitebox _model_
 
 Übersichtsdiagramm::
-****
-_<Übersichtsdiagramm>_
-****
+
+image::../../software(sad)/images/model_übersichtsdiagramm.jpg[Übersichtsdiagramm Package model]
 
 Begründung:: Das model Package enthält die models für verschiedene Entities. Nach dem Prinzip des MVC werden hier Daten gespeichert und verwaltet. Zur besseren Lesbarkeit gibt es weitere Subpackages welche generelle Modelle enthalten. 
 
