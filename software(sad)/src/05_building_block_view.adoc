@@ -23,7 +23,6 @@ Die nachfolgende Bausteinsicht zeigt die Struktur des Systems auf und gibt einen
 {empty} +
 *Diese Bausteinsicht befindet sich noch in Arbeit*
 
-//image::05_building_blocks-DE.png["Hierarchie in der Bausteinsicht"]
 
 {empty} +
    
@@ -103,10 +102,10 @@ Nachfolgend wird der Baustein "CatchOrWaste" als Whitebox mithilfe des Whitebox-
 ==== Whitebox _CatchOrWaste_
 ****
 
-Übersichtsdiagramm::
+*Übersichtsdiagramm*
 
 
-_<Übersichtsdiagramm>_
+image::../../software(sad)/images/catchorwaste_übersichtsdiagramm.jpg[Übersichtsdiagramm model]
 
 
 Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes, da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
