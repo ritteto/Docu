@@ -142,7 +142,7 @@ Erläuterung::
 ==== Whitebox _model_
 ****
 
-Übersichtsdiagramm::
+*Übersichtsdiagramm*
 
 image::../../software(sad)/images/Layer_2.png[Layer2]
 ****
