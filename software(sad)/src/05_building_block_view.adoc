@@ -64,9 +64,9 @@ Dieses enthält:
 * Blackbox-Beschreibungen der hier enthaltenen Bausteine.
 
 
-Übersichtsdiagramm::
+*Übersichtsdiagramm*
 
-image::../../software(sad)/images/kontext_übersichtsdiagramm.jpg[Übersichtsdiagramm model]
+image::../../software(sad)/images/kontext_übersichtsdiagramm.jpg[Übersichtsdiagramm Kontext]
 
 
 Begründung:: Das Gesamtsystem wurde in das System CatchOrWaste, welches die eigentliche Game-Applikation enthält, sowie die umgebenden Systeme mit denen das Game interagiert unterteilt. Die Game-Applikation stützt sich auf die Library FXGL und bekommt von dort Vorlagen für die Struktur der Applikation sowie die verschiedenen Spielelemente. 
@@ -97,15 +97,15 @@ Blackboxen::
 
 === Ebene 2
 
-Nachfolgend wird der Baustein "CatchOrWaste" als Whitebox mithilfe des Whitebox-Templates beschrieben.
+Nachfolgend wird der Baustein "catchorwaste" als Whitebox mithilfe des Whitebox-Templates beschrieben.
 
-==== Whitebox _CatchOrWaste_
+==== Whitebox _catchorwaste_
 ****
 
 *Übersichtsdiagramm*
 
 
-image::../../software(sad)/images/catchorwaste_übersichtsdiagramm.jpg[Übersichtsdiagramm model]
+image::../../software(sad)/images/catchorwaste_übersichtsdiagramm.jpg[Übersichtsdiagramm catchorwaste]
 
 
 Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes, da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
@@ -191,7 +191,7 @@ Erläuterung der Bausteine::
 *Übersichtsdiagramm*
 
 
-image::../../software(sad)/images/view_übersichtsdiagramm.jpg[Übersichtsdiagramm model]
+image::../../software(sad)/images/view_übersichtsdiagramm.jpg[Übersichtsdiagramm view]
 
 
 Begründung:: Die View enthält Klassen für die wichtigsten drei Entities (Cart, Player, FallingObject) sowie für weitere Daten welche Visuell dargestellt werden müssen wie zum Beispiel die verbleibende Zeit oder den aktuellen Punktestand. Die Aufteilung folgt den Klassen des Models, was für eine gute Lesbarkeit und eine klare Struktur über das gesamte Projekt sorgt.
@@ -229,7 +229,7 @@ Erläuterung der Bausteine::
 *Übersichtsdiagramm*
 
 
-image::../../software(sad)/images/controller_übersichtsdiagramm.jpg[Übersichtsdiagramm model]
+image::../../software(sad)/images/controller_übersichtsdiagramm.jpg[Übersichtsdiagramm controller]
 
 
 Begründung:: Der Controller enthält die Logik des Systems. Er folgt weiterhin der Aufteilung nach den drei wichtigsten Entity-Typen. Für Logik welche mehrere Entity-Typen betrifft ist in separaten Klassen gespeichert. Ein Beispiel dafür ist das Punktesystem.
