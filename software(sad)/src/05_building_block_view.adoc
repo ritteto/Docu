@@ -185,15 +185,18 @@ Erläuterung der Bausteine::
 _<Übersichtsdiagramm>_
 ****
 
-Begründung:: <_Begründung_>
+Begründung:: Die View enthält Klassen für die wichtigsten drei Entities (Cart, Player, FallingObject) sowie für weitere Daten welche Visuell dargestellt werden müssen wie zum Beispiel die verbleibende Zeit oder den aktuellen Punktestand. Die Aufteilung folgt den Klassen des Models, was für eine gute Lesbarkeit und eine klare Struktur über das gesamte Projekt sorgt.
 
 Enthaltene Bausteine::
 [cols="1,2" options="header"]
 |===
 | **Name** | **Verantwortung**
-| <_Name_> | <_Verantwortung_>
-| <_Name_> | <_Verantwortung_>
-| <_Name_> | <_Verantwortung_>
+| CartView | Darstellung Cart-spezifischer Daten
+| PlayerView | Darstellung Player-spezifischer Daten
+| FallingObjectView | Darstellung FallingObject-spezifischer Daten
+| BackgroundView | Darstellung des Hintergrundes
+| PunktesystemView | Darstellung des aktuellen Punktestandes
+| TimerView | Darstellung des Timers
 
 |=== 
 
@@ -201,9 +204,12 @@ Erläuterung der Bausteine::
 [cols="1,2,1" options="header"]
 |===
 | **Name** | **Verantwortung** | **Beschreibung**
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
+| CartView | Darstellung Cart-spezifischer Daten | Die CartView stellt die Entities des Typ Cart nach den Daten des CartModel dar.
+| PlayerView | Darstellung Player-spezifischer Daten | Die PlayerView stellt die Entity des Typ Player nach den Daten des PlayerModel dar.
+| FallingObjectView | Darstellung FallingObject-spezifischer Daten | Die FallingObjectView stellt die Entities des Typ FallingObject nach den Daten des FallingObjectModel dar.
+| BackgroundView | Darstellung des Hintergrundes | Die BackgroundView stellt den Hintergrund dar.
+| PunktesystemView | Darstellung des aktuellen Punktestandes | Die PunktesystemView stellt den aktuellen Punktestand nach den Daten aus dem PunktesystemModel dar.
+| TimerView | Darstellung des Timers | Die TimerView liest die Daten aus dem TimerModel und stellt diese entsprechend für den Nutzer lesbar dar.
 |===
 
 [role="arc42help"]
@@ -214,15 +220,18 @@ Erläuterung der Bausteine::
 _<Übersichtsdiagramm>_
 ****
 
-Begründung:: <_Begründung_>
+Begründung:: Der Controller enthält die Logik des Systems. Er folgt weiterhin der Aufteilung nach den drei wichtigsten Entity-Typen. Für Logik welche mehrere Entity-Typen betrifft ist in separaten Klassen gespeichert. Ein Beispiel dafür ist das Punktesystem.
 
 Enthaltene Bausteine:: 
 [cols="1,2" options="header"]
 |===
 | **Name** | **Verantwortung**
-| <_Name_> | <_Verantwortung_>
-| <_Name_> | <_Verantwortung_>
-| <_Name_> | <_Verantwortung_>
+| CartController | Implementierung der Logik für Cart-Entities
+| PlayerController | Implementierung der Logik für den Player
+| FallingObjectController | Implementierung der Logik für FallingObject-Entities
+| PunktesystemController | Implementierung der Logik für das Punktesystem
+| TimerController | Implementierung der Logik für den Timer
+| GPIOController | Implementierung der Logik für Inputhandling.
 
 |===
 
@@ -230,7 +239,10 @@ Erläuterung der Bausteine::
 [cols="1,2,1" options="header"]
 |===
 | **Name** | **Verantwortung** | **Beschreibung**
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
+| CartController | Implementierung der Logik für Cart-Entities | Der CartController sorgt dafür, dass sich Cart-Entities entsprechend der definierten Logik für Carts verhalten.
+| PlayerController | Implementierung der Logik für den Player| Der PlayerController sorgt dafür, dass sich die Player-Entity entsprechend der definierten Logik für den Player verhält.
+| FallingObjectController | Implementierung der Logik für FallingObject-Entities | Der FallingObjectController sorgt dafür, dass sich FallingObject-Entities entsprechend der definierten Logik für FallingObjects verhalten.
+| PunktesystemController | Implementierung der Logik für das Punktesystem | Der PunktesystemController sorgt dafür das je nach Sortierung der FallingObjects entsprechende Punkte gutgeschrieben bzw. abgezogen werden.
+| TimerController | Implementierung der Logik für den Timer | Der TimerController sorgt dafür, dass das Spiel nur innerhalb des festgelegten Zeitraums spielbar ist.
+| GPIOController | Implementierung der Logik für Inputhandling. | Der GPIOController implementiert die Logik um Benutzerinput von den GPIO-Pins des Raspberry Pi in verständliche Daten für die Software umzuwandeln.
 |===
