@@ -36,9 +36,8 @@ image::../../software(sad)/images/05-Kontext.jpg[Kontextabgrenzung]
 *Ebene 2* zoomt in einige Bausteine der Ebene 1 hinein.
 Sie enthält somit die Whitebox-Beschreibungen ausgewählter Bausteine der Ebene 1, jeweils zusammen mit Blackbox-Beschreibungen darin enthaltener Bausteine.
 
-image::../../software(sad)/images/model_übersichtsdiagramm.jpg[Layer1]
+image::../../software(sad)/images/05-Layer_1.jpg[Layer1]
 
-//05-Layer_1.jpg
 
 {empty} +
 
@@ -143,9 +142,8 @@ Erläuterung::
 ==== Whitebox _model_
 
 Übersichtsdiagramm::
-image::../../software(sad)/images/model_übersichtsdiagramm.jpg[Layer1]
-image::software(sad)/images/model_übersichtsdiagramm.jpg[Layer1]
-image::/software(sad)/images/model_übersichtsdiagramm.jpg
+
+image::../../software(sad)/images/model_übersichtsdiagramm.jpg[Übersichtsdiagramm Package model]
 
 Begründung:: Das model Package enthält die models für verschiedene Entities. Nach dem Prinzip des MVC werden hier Daten gespeichert und verwaltet. Zur besseren Lesbarkeit gibt es weitere Subpackages welche generelle Modelle enthalten. 
 
