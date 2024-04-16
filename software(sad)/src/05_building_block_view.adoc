@@ -145,25 +145,36 @@ Erläuterung::
 _<Übersichtsdiagramm>_
 ****
 
-Begründung:: <_Begründung_>
+Begründung:: Das model Package enthält die models für verschiedene Entities. Nach dem Prinzip des MVC werden hier Daten gespeichert und verwaltet. Zur besseren Lesbarkeit gibt es weitere Subpackages welche generelle Modelle enthalten. 
 
 Enthaltene Bausteine:: 
 [cols="1,2" options="header"]
 |===
 | **Name** | **Verantwortung**
-| <_Name_> | <_Verantwortung_>
-| <_Name_> | <_Verantwortung_>
-| <_Name_> | <_Verantwortung_>
+| components | Speichert components Klassen
+| constants | Speichert Constant-Klasse
+| enums | speichert Enum-Klasse
+| factories | Speichert factory Klassen
+| CartModel | Speichert und verwaltet Cart-spezifische Daten
+| PlayerModel | Speichert und verwaltet Player-spezifische Daten
+| FallingObjectModel | Speichert und verwaltet FallingObject-spezifische Daten
+| PunktesystemModel | Speichert und verwaltet Daten zum Punktesystem
+| TimerModel | Speichert und verwaltet Daten zum Timer
 
 |===
 
 Erläuterung der Bausteine::
 [cols="1,2,1" options="header"]
 |===
-| **Name** | **Verantwortung** | **Beschreibung**
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
-| <_Name_> | <_Verantwortung_> | <_Beschreibung_>
+| components | Speichert components Klassen | Speichert component Klassen. Components werden gebraucht um schon intitialisierten Entities weitere Attribute oder Verhaltensweisen anzuhängen.
+| constants | Speichert Constant-Klasse | Speichert eine Java-Klasse welche Konstanten enthält
+| enums | speichert Enum-Klasse | Speichert eine Java-Klasse, welche Enums enthält. Enums werden benutzt um Entities einen Typ zuzuweisen.
+| factories | Speichert factory Klassen | Speichert eine FXGL-Factory. Diese enthält Blaupausen zur Initialisierung von Entities.
+| CartModel | Speichert und verwaltet Cart-spezifische Daten | Dient zur Verwaltung von Daten welche Entities vom Typ Cart betreffen.
+| PlayerModel | Speichert und verwaltet Player-spezifische Daten | Dient zur Verwaltung von Daten welche die Entity vom Typ Player betreffen.
+| FallingObjectModel | Speichert und verwaltet FallingObject-spezifische Daten | Dient zur Verwaltung von Daten welche Entities vom Typ FallingObject betreffen.
+| PunktesystemModel | Speichert und verwaltet Daten zum Punktesystem | Verwaltet Daten zum Punktesystem wie zum Beispiel den aktuellen Punktestand.
+| TimerModel | Speichert und verwaltet Daten zum Timer | Verwaltet Daten zum zeitlichen Begrenzung der Spielzeit. 
 |===
 
 [role="arc42help"]
