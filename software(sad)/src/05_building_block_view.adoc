@@ -66,7 +66,7 @@ Dieses enthält:
 
 Übersichtsdiagramm::
 
-_<Übersichtsdiagramm>_
+image::../../software(sad)/images/kontext_übersichtsdiagramm.jpg[Übersichtsdiagramm model]
 
 
 Begründung:: Das Gesamtsystem wurde in das System CatchOrWaste, welches die eigentliche Game-Applikation enthält, sowie die umgebenden Systeme mit denen das Game interagiert unterteilt. Die Game-Applikation stützt sich auf die Library FXGL und bekommt von dort Vorlagen für die Struktur der Applikation sowie die verschiedenen Spielelemente. 
