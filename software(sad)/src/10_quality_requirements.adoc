@@ -21,42 +21,29 @@ Siehe https://docs.arc42.org/section-10/[Qualitätsanforderungen] in der online-
 
 [role="arc42help"]
 ****
-.Inhalt
-Der Qualitätsbaum (à la ATAM) mit Qualitätsszenarien an den Blättern.
-
-.Motivation
-Die mit Prioritäten versehene Baumstruktur gibt Überblick über die -- oftmals zahlreichen -- Qualitätsanforderungen.
-
-.Form
-* Baumartige Verfeinerung des Begriffes „Qualität“, mit „Qualität“ oder „Nützlichkeit“ als Wurzel.
-* Mindmap mit Qualitätsoberbegriffen als Hauptzweige
-
-In jedem Fall sollten Sie hier Verweise auf die Qualitätsszenarien des folgenden Abschnittes aufnehmen.
+image::../../software(sad)/images/Qualitätsbaum.png[Qualitätsbaum]
 ****
 
 === Qualitätsszenarien
 
 [role="arc42help"]
 ****
-.Inhalt
-Konkretisierung der (in der Praxis oftmals vagen oder impliziten) Qualitätsanforderungen durch (Qualitäts-)Szenarien.
 
-Diese Szenarien beschreiben, was beim Eintreffen eines Stimulus auf ein System in bestimmten Situationen geschieht.
+[options="header"]
+|================================================================================================================================================================================================================================================================================================================================================================
+| ID  | Punkt             | Szenario
+| W01 | Erweitbarkeit     | Eine Fachperson mit genügenden Kenntnissen in Java und JavaFx sollte anhand der Ordnerstruktur und den Kommentaren/Verweisen den Aufbau verstehen und nicht funktionale Anpassungen, wie die Übersetzung der Texte im Spiel, sollen nach wenigen Stunden machbar sein. Für grosse Anpassungen reicht eine Woche.
+| W02 | Testbarkeit       | Allfällige Anpassungen sollen klar und ersichtlich getestet werden können, ohne ein grosses Vorwissen dazu zu besitzen. Der Code ist modular gehalten und kann sich auf Änderungen anpassen, ohne dass die Funktionalität verloren geht.
+| W03 | Lesbarkeit        | Eine Person kann anhand der Dokumentation mit JavaDoc nachvollziehen, wie die Struktur des Codes aufgebaut ist. Die Verständlichkeit ist der Person kein Hinderniss und kann mit den gegebenen Mitteln auskunft über das System geben (White-Box Wissen).
+| K01 | Interoperabilität | Der Spieler benutzt einen Joystick mit Buttons, um Inputs in das Spiel zu übertragen. Die Hardware funktioniert dabei einwandfrei und lässt keine validen Inputs verloren. Nicht definierte Inputs werden nicht aufgenommen.
+| K02 | Interoperabilität | Die Arcadehardware kann auf andere Peripheriegeräte reagieren und interpretiert Inputs korrekt wie angegeben.
+| K03 | Interoperabilität | Ein Problem mit der Verbindung der Hardware kann mithilfe des SAD und den Verweisen im Code behoben werden, sofern eine ähnlich aufzubauende Hardware gebraucht wird.
+| E01 | Reaktionszeit     | Die Person bewegt den Wegwerfpolizisten und bemerkt keine Verzörgerung bei Richtungsänderungen oder bei Aufnahme der Fallenden Objekte. Somit kann der Spielspass gewährleistet werden.
+| B01 | Bedienung         | Die Steuerung des Spiels erfolgt über einen robusten Joystick und klar reagierende Buttons. Eine kurze Einführungsvorschau beim Start des Spiels erklärt die grundlegenden Spielmechaniken und die Verwendung der Steuerelemente, sodass Spieler unabhängig von ihrem vorherigen Wissen intuitiv starten können.
+| B02 | Ästhetik          | Das Spiel präsentiert sich in einem ansprechenden Retro-Stil mit lebendigen Farben und charakteristischen Pixelgrafiken, die speziell auf die Zielgruppe der 13- bis 16-Jährigen abgestimmt sind. Diese visuelle Gestaltung unterstützt das nostalgische Flair und fördert die Immersion in das Spielgeschehen.
+| Z01 | Toleranz          | Die Software des Arcadekastens ist darauf ausgelegt, Fehleingaben effektiv zu handhaben. Bewegungen des Joysticks nach oben und unten haben keine Auswirkungen im Spiel, wodurch unbeabsichtigte Aktionen vermieden werden. Das System ist stabil konzipiert und gewährleistet, dass auch bei intensiver Nutzung durch viele Spieler keine Leistungseinbußen auftreten.
+| F01 | Angemessenheit    | Das Spiel bietet eine ausgewogene Herausforderung, die weder zu leicht noch zu schwer für die Altersgruppe der 13- bis 15-Jährigen ist. Es kombiniert Elemente, die sowohl das Geschick als auch die Reaktionsfähigkeit fordern, und hält die Spieler mit zunehmend schwierigeren Levels engagiert, während es gleichzeitig Spaß macht.
+| F02 | Funktionalität    | Unabhängig von der Spieldauer lässt das System kontinuierlich Gegenstände herab, die vom Spieler gefangen werden müssen. Diese Mechanik ist zentral für das Gameplay und funktioniert fehlerfrei, um ein durchgängiges und unterbrechungsfreies Spielerlebnis zu gewährleisten.
+|================================================================================================================================================================================================================================================================================================================================================================
 
-Wesentlich sind zwei Arten von Szenarien:
-
-* Nutzungsszenarien (auch bekannt als Anwendungs- oder Anwendungsfallszenarien) beschreiben, wie das System zur Laufzeit auf einen bestimmten Auslöser reagieren soll.
-Hierunter fallen auch Szenarien zur Beschreibung von Effizienz oder Performance.
-Beispiel: Das System beantwortet eine Benutzeranfrage innerhalb einer Sekunde.
-* Änderungsszenarien beschreiben eine Modifikation des Systems oder seiner unmittelbaren Umgebung.
-Beispiel: Eine zusätzliche Funktionalität wird implementiert oder die Anforderung an ein Qualitätsmerkmal ändert sich.
-
-
-.Motivation
-Szenarien operationalisieren Qualitätsanforderungen und machen deren Erfüllung mess- oder entscheidbar.
-
-Insbesondere wenn Sie die Qualität Ihrer Architektur mit Methoden wie ATAM überprüfen wollen, bedürfen die in Abschnitt 1.2 genannten Qualitätsziele einer weiteren Präzisierung bis auf die Ebene von diskutierbaren und nachprüfbaren Szenarien.
-
-.Form
-Entweder tabellarisch oder als Freitext.
 ****
