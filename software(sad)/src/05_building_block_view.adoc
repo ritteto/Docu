@@ -42,7 +42,7 @@ image::../../software(sad)/images/05-Layer_1.jpg[Layer1]
 
 *Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
 
-image::../../ssoftware(sad)/images/05-Layer_3.jpg[Layer3]
+image::../../software(sad)/images/05-Layer_3.jpg[Layer3]
 
 {empty} +
 
