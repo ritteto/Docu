@@ -23,13 +23,12 @@ Die nachfolgende Bausteinsicht zeigt die Struktur des Systems auf und gibt einen
 {empty} +
 *Diese Bausteinsicht befindet sich noch in Arbeit*
 
-//image::05_building_blocks-DE.png["Hierarchie in der Bausteinsicht"]
 
 {empty} +
    
 *Ebene 1* ist die Whitebox-Beschreibung des Gesamtsystems, zusammen mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
 
-image::../../software(sad)/images/05-Kontext.jpg[Kontextabgrenzung]
+image::../../software(sad)/images/05-Layer_1_Kontext.jpg[Kontextabgrenzung]
 
 {empty} +
 
@@ -43,7 +42,7 @@ image::../../software(sad)/images/05-Layer_1.jpg[Layer1]
 
 *Ebene 3* zoomt in einige Bausteine der Ebene 2 hinein, usw.
 
-image::../../software(sad)/images/Layer_2.png[Layer2]
+image::../../software(sad)/images/05-Layer_3.jpg[Layer3]
 
 {empty} +
 
@@ -63,12 +62,12 @@ Dieses enthält:
 * Ein Übersichtsdiagramm
 * die Begründung dieser Zerlegung
 * Blackbox-Beschreibungen der hier enthaltenen Bausteine.
-****
 
-Übersichtsdiagramm::
-****
-_<Übersichtsdiagramm>_
-****
+
+*Übersichtsdiagramm*
+
+image::../../software(sad)/images/kontext_übersichtsdiagramm.jpg[Übersichtsdiagramm Kontext]
+
 
 Begründung:: Das Gesamtsystem wurde in das System CatchOrWaste, welches die eigentliche Game-Applikation enthält, sowie die umgebenden Systeme mit denen das Game interagiert unterteilt. Die Game-Applikation stützt sich auf die Library FXGL und bekommt von dort Vorlagen für die Struktur der Applikation sowie die verschiedenen Spielelemente. 
 Der Benutzer liefert Eingaben welche vom System CatchOrWaste mithilfe der FXGL-Gamelibrary (grösstenteils) in Visuelle Outputs umgesetzt werden. Dem Admin ist es möglich das System CatchOrWaste bei Bedarf zu reparieren oder zu modifizieren. 
@@ -94,18 +93,20 @@ Blackboxen::
 | FXGL | Bereitstellung der Game-Library | FXGL stellt dem System Funktionen und Klassen zur Erstellung und modifizierung von Gameobjekten zur Verfügung. Es bietet eine Grundlage zur Entwicklung des Spiels.
 |===
 
+****
 
 === Ebene 2
 
-Nachfolgend wird der Baustein "CatchOrWaste" als Whitebox mithilfe des Whitebox-Templates beschrieben.
+Nachfolgend wird der Baustein "catchorwaste" als Whitebox mithilfe des Whitebox-Templates beschrieben.
 
-==== Whitebox _CatchOrWaste_
-
-Übersichtsdiagramm::
-
+==== Whitebox _catchorwaste_
 ****
-_<Übersichtsdiagramm>_
-****
+
+*Übersichtsdiagramm*
+
+
+image::../../software(sad)/images/catchorwaste_übersichtsdiagramm.jpg[Übersichtsdiagramm catchorwaste]
+
 
 Begründung:: Das Gesamtsystem wurde nach dem Prinzip des MVC (Model, View, Controller) zerlegt. Diese Zerlegung ermöglicht eine klare Aufteilung der Verantwortlichkeiten der einzelnen Klassen und Methoden. Somit ist es Entwicklern möglich die Komponenten unabhängig von einander zu entwickeln. Ausserdem erleichtert es die Lesbarkeit des Codes, da die Klassen kürzer und übersichtlicher gestaltet sind. Es kann sich auf einen spezifischen Teil des Codes konzentriert werden.
 Einen weiteren Pluspunkt bietet MVC für das Testing des Codes. Dabei ist erneut die Unabhängigkeit der einzelnen Komponenten von Vorteil.
@@ -132,6 +133,7 @@ Erläuterung::
 | view | Handling von Userinput, Darstellung der Daten | Die View kümmert sich um das Handling der Userinputs welche von der Hardware kommen und gibt diese nach Bedarf weiter. Ausserdem stellt sie mithilfe der Daten aus dem Model entsprechende Visuelle Komponenten dar und gibt diese zur Ausgabe an den Bildschirm weiter.
 | controller | Modifizierung und Implementierung der Gamelogik | Der Controller ist für die Umsetzung der Gamelogik zuständig. Dafür reagiert er auf Inputs des Users (welche nicht in der View bearbeitet werden können) und modifiziert darauf basierend die Daten der Models.
 |===
+****
 
 
 === Ebene 3
@@ -140,10 +142,13 @@ Erläuterung::
 
 
 ==== Whitebox _model_
+****
 
-Übersichtsdiagramm::
+*Übersichtsdiagramm*
 
-image::../../software(sad)/images/model_übersichtsdiagramm.jpg[Übersichtsdiagramm Package model]
+
+image::../../software(sad)/images/model_übersichtsdiagramm.jpg[Übersichtsdiagramm model]
+
 
 Begründung:: Das model Package enthält die models für verschiedene Entities. Nach dem Prinzip des MVC werden hier Daten gespeichert und verwaltet. Zur besseren Lesbarkeit gibt es weitere Subpackages welche generelle Modelle enthalten. 
 
@@ -177,13 +182,17 @@ Erläuterung der Bausteine::
 | TimerModel | Speichert und verwaltet Daten zum Timer | Verwaltet Daten zum zeitlichen Begrenzung der Spielzeit. 
 |===
 
+****
+
 [role="arc42help"]
 ==== Whitebox _view_
+****
 
-Übersichtsdiagramm::
-****
-_<Übersichtsdiagramm>_
-****
+*Übersichtsdiagramm*
+
+
+image::../../software(sad)/images/view_übersichtsdiagramm.jpg[Übersichtsdiagramm view]
+
 
 Begründung:: Die View enthält Klassen für die wichtigsten drei Entities (Cart, Player, FallingObject) sowie für weitere Daten welche Visuell dargestellt werden müssen wie zum Beispiel die verbleibende Zeit oder den aktuellen Punktestand. Die Aufteilung folgt den Klassen des Models, was für eine gute Lesbarkeit und eine klare Struktur über das gesamte Projekt sorgt.
 
@@ -211,14 +220,17 @@ Erläuterung der Bausteine::
 | PunktesystemView | Darstellung des aktuellen Punktestandes | Die PunktesystemView stellt den aktuellen Punktestand nach den Daten aus dem PunktesystemModel dar.
 | TimerView | Darstellung des Timers | Die TimerView liest die Daten aus dem TimerModel und stellt diese entsprechend für den Nutzer lesbar dar.
 |===
+****
 
 [role="arc42help"]
 ==== Whitebox _controller_
+****
 
-Übersichtsdiagramm::
-****
-_<Übersichtsdiagramm>_
-****
+*Übersichtsdiagramm*
+
+
+image::../../software(sad)/images/controller_übersichtsdiagramm.jpg[Übersichtsdiagramm controller]
+
 
 Begründung:: Der Controller enthält die Logik des Systems. Er folgt weiterhin der Aufteilung nach den drei wichtigsten Entity-Typen. Für Logik welche mehrere Entity-Typen betrifft ist in separaten Klassen gespeichert. Ein Beispiel dafür ist das Punktesystem.
 
@@ -246,3 +258,4 @@ Erläuterung der Bausteine::
 | TimerController | Implementierung der Logik für den Timer | Der TimerController sorgt dafür, dass das Spiel nur innerhalb des festgelegten Zeitraums spielbar ist.
 | GPIOController | Implementierung der Logik für Inputhandling. | Der GPIOController implementiert die Logik um Benutzerinput von den GPIO-Pins des Raspberry Pi in verständliche Daten für die Software umzuwandeln.
 |===
+****
