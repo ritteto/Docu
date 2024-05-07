@@ -28,3 +28,4 @@ Kontext: Damit das mit Java-Entwickelte Arcadespiel genügend Ressourcen enthäl
 Entscheidung: Durch Optimierungen der Performance durch Verminderung der Auflösungen der Bilder und Code Cleaning genügen die Ressourcen vom Raspberry Pi 4. Zusätzlich ist eine Inkompatibilität mit dem Raspberry Pi 5 gefunden worden, welche nicht umgehbar ist. Siehe SAD Kapitel 11 Risiken 1 und 2.
 
 Konsequenzen: Durch das Beibehalten des Raspberry Pi 4 und das Vermeiden von Inkompatibilitätsproblemen mit dem neueren Modell kann das Projekt Kosten sparen. Die Investition in neue Hardware wird vermieden, und das bestehende Equipment kann effektiv genutzt werden. Langfristig muss jedoch bewertet werden, ob die Hardware-Ausstattung den wachsenden Anforderungen des Spiels gerecht wird oder ob zukünftige Updates eine leistungsfähigere Plattform erfordern.
+****
