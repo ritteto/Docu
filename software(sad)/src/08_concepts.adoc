@@ -39,7 +39,6 @@ Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes könn
 * Entwicklungskonzepte
 * Betriebskonzepte
 
-image::08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutting concepts"]
 
 .Weiterführende Informationen
 
@@ -47,9 +46,17 @@ Siehe https://docs.arc42.org/section-8/[Querschnittliche Konzepte] in der online
 
 ****
 
-=== _<Konzept 1>_
+=== Fachliche Konzepte
 
-_<Erklärung>_
+==== Inputhandling
+
+Bei der Entwicklung interaktiver Anwendungen auf Plattformen wie dem Raspberry Pi ermöglicht die Verwendung des GPIO-Controllers eine nahtlose Integration von Hardware-Eingaben, was insbesondere bei Spielen und Echtzeitanwendungen von großem Vorteil ist. Die Pi4J-Bibliothek stellt ein robustes Framework zur Verfügung, das die direkte Kommunikation mit den GPIO-Pins des Raspberry Pi ermöglicht und damit die Grundlage für die Verarbeitung physischer Benutzereingaben bildet.
+
+Der Kern der GPIO-Controller-Klasse ist die Fähigkeit, verschiedene Eingabequellen wie Joysticks und Tasten zu verwalten. Diese Eingaben werden über speziell konfigurierte DigitalInput-Instanzen abgefragt, die jeweils mit einer eindeutigen GPIO-Adresse und einem Pull-Up-Widerstand versehen sind, um Störeinflüsse auf das Signal zu minimieren und die Integrität der Eingaben zu gewährleisten.
+
+Ein zentrales Element des Controllers ist das Listener-basierte Modell. Für jede Taste werden spezielle Listener implementiert, die reagieren, wenn ein Benutzer eine Taste drückt (Signal geht auf DigitalState.LOW). Diese Ereignisse lösen vordefinierte Aktionen aus, wie z.B. das Öffnen oder Schließen einer virtuellen Tür, die sicher und effizient im Kontext des JavaFX-Hauptthreads über Platform.runLater() ausgeführt werden. Dadurch wird sichergestellt, dass alle UI-bezogenen Änderungen korrekt und konfliktfrei auf der Benutzeroberfläche dargestellt werden.
+
+Ebenso werden die Joysticks überwacht, um kontinuierliche Bewegungsanforderungen zu erkennen und zu verarbeiten. Die Zustände movingRight und movingLeft, die in AtomicBoolean Variablen gespeichert sind, werden durch Joystick-Ereignisse aktualisiert, die wiederum die Bewegungsrichtung des Spielers in der Anwendung steuern. Dies wird durch einen AnimationTimer erreicht, der in regelmäßigen Abständen überprüft, ob eine Bewegung erforderlich ist und dementsprechend die Funktion movePlayer aufruft, um die Position des Spielers anzupassen.
 
 === _<Konzept 2>_
 
