@@ -44,10 +44,10 @@ Für Versionierungskonventionen siehe https://fhnw-projecttrack.atlassian.net/wi
 == Code Komplexität
 
 === Klassengrösse:
-Die Klassengröße ist eine Metrik, die die Anzahl der Zeilen Code in einer Klasse misst. Es wird oft empfohlen, Klassen auf eine moderate Größe zu beschränken, um die Lesbarkeit zu verbessern und sicherzustellen, dass jede Klasse eine klare und begrenzte Verantwortung hat. Zum Beispiel könnte festgelegt werden, dass Klassen nicht größer als 300 Zeilen sein sollten. GitLab kann so konfiguriert werden, dass es diese Grenze überwacht und bei Überschreitung Warnungen oder Fehler generiert.
+Die Klassengröße ist eine Metrik, die die Anzahl der Zeilen Code in einer Klasse misst. Es wird oft empfohlen, Klassen auf eine moderate Größe zu beschränken, um die Lesbarkeit zu verbessern und sicherzustellen, dass jede Klasse eine klare und begrenzte Verantwortung hat. Zum Beispiel könnte festgelegt werden, dass Klassen nicht größer als 400 Zeilen sein sollten. GitLab kann so konfiguriert werden, dass es diese Grenze überwacht und bei Überschreitung Warnungen oder Fehler generiert.
 
 === Methodengrösse:
-Die Größe von Methoden ist eine ähnliche Metrik, die die Anzahl der Zeilen Code in einer Methode misst. Kurze und fokussierte Methoden sind in der Regel einfacher zu verstehen und zu warten. Eine gängige Empfehlung ist beispielsweise, dass Methoden weniger als 25 Zeilen Code haben sollten. GitLab kann so eingestellt werden, dass es die Einhaltung dieser Regel überprüft und Feedback gibt, wenn eine Methode zu umfangreich wird.
+Die Größe von Methoden ist eine ähnliche Metrik, die die Anzahl der Zeilen Code in einer Methode misst. Kurze und fokussierte Methoden sind in der Regel einfacher zu verstehen und zu warten. Eine gängige Empfehlung ist beispielsweise, dass Methoden weniger als 60 Zeilen Code haben sollten. GitLab kann so eingestellt werden, dass es die Einhaltung dieser Regel überprüft und Feedback gibt, wenn eine Methode zu umfangreich wird.
 
 === Verschachtelungstiefe:
 Die zyklomatische Komplexität ist eine Maßzahl für die Strukturkomplexität des Codes und misst die Anzahl der unabhängigen Pfade durch den Code. Eine niedrige zyklomatische Komplexität wird oft als Zeichen für gut strukturierten Code betrachtet. Zum Beispiel könnte festgelegt werden, dass die maximale Verschachtelungstiefe im Code nicht mehr als 3 betragen sollte. GitLab kann Tools integrieren, die diese Metrik analysieren und sicherstellen, dass die Komplexität im akzeptablen Bereich bleibt.
