@@ -6,9 +6,6 @@
 Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierung und den gesamten Entwicklungsprozess beeinflussen, sind zu beachten. Diese Vorgaben erstrecken sich gelegentlich über die gesamte Organisation oder Firma hinaus und überschreiten die Grenzen einzelner Systeme.
 ****
 === Technische Randbedingungen
-[role="arc42help"]
-****
-****
 ==== Software
 
 [role="arc42help"]
@@ -53,6 +50,27 @@ Einschränkungen und Richtlinien, die unsere kreative Gestaltung, Implementierun
 |Budget| Das Projekt erhält ein finanzielles Budget von 200 CHF. Die Beschaffung von Hardware und Materialien sollte daher dieses Limit nicht überschreiten. Bei Bedarf könnte mittels einem Antrag betrachtet werden, ob das Budget angehoben werden darf oder nicht.
 |Zeitlich bedingte Beschränkung| Eins bis zwei Wochen vor dem Abschlussevent erfolgt die Abnahme des Projekts, die Dokumentation spätestens eine Woche vor Übergangstermin.
 |Ressourcen| Sieben Teammitglieder (Stand: 29.11.23) errichten im ersten Halbjahr je einen Arbeitsaufwand von 180 Stunden, was zu einem totalen Arbeitsaufwand von 1260 Stunden führen sollte.
+|===
+****
+
+=== Bedingungen zum Spielen
+
+[role="arc42help"]
+****
+[cols="1,2",options="header"]
+|===
+| Bedingung | Erklärung
+| Strom| Ohne Stromversorgung ist die Verwendung vom Arcadekasten nicht möglich. Eine Stromverbindung zum Netzteil ist unerlässlich.
+| Vermeidung von geknickten Stromkabeln| Geknickte Kabel können zu Ausfällen und Sicherheitsrisiken führen, was die Funktionsfähigkeit des Arcadekastens beeinträchtigt oder gar in Stille legt.
+| Schutz vor Wasser und Feuchtigkeit| Wasser und Feuchtigkeit können Kurzschlüsse verursachen und die Elektronik der Hardwaregeräte beschädigen, was zu Ausfällen führt.
+|Schutz vor Feuer/Naturgewalten| Feuer- und Sturmschutz verhindert Schäden am Arcadekasten, die nur mit viel Aufwand zu reparieren sind.
+| Tischhöhe Ergonomie| Die Tischhöhe sollte, wenn man als Durchschnittsgrösse eines Jugendlichem von ~160cm geht und im stehen, mindestens einen Meter betragen. Sofern geplant ist, das Spiel im sitzen zu spielen, ist eine Sitzhöhe von 45 bis 55 Zentimeter empfohlen mit der Tischhöhe von etwa 70 Zentimeter. https://www.ergolutions.de/optimale-schreibtischhoehe#:~:text=Man%20kann%20die%20optimale%20Schreibtischh%C3%B6he,Faktor%203%2C72%20dividiert%20wird[Ergonomie nach Grösse]
+| Tischebene| Ein ebener Tisch verhindert das Wackeln des Arcadekastens und sorgt für eine stabile Spielfläche ohne schlechten Spielerlebnis.
+| Unterlage rutschfest| Eine rutschfeste Unterlage verhindert das Verrutschen des Arcadekastens, was die Sicherheit und Stabilität erhöht.
+| Belüftung/Luftauslass nicht blockiert| Eine gute Belüftung verhindert die Überhitzung des Arcadekastens, was die Lebensdauer der Elektronik verlängert und Ausfälle vermeidet.
+| Schutz vor Sonneneinstrahlung| Vermeidung von direkter Sonneneinstrahlung schützt den Arcadekasten vor Überhitzung und Bildschirmblendung, was die Sichtbarkeit und Funktionsfähigkeit erhält.
+| Regelmässige Wartung (Mindestens 1x pro Monat von Staub befreien)| Regelmäßige Wartung stellt sicher, dass der Arcadekasten sauber bleibt, damit die Lebensdauer der Hardware erhöht wird und der Kasten ansprechender wirkt.
+| Gewisser Schutz vor gewaltsamer Nutzung/Manipulation (Verschleiss von Joystick und Button)| Es soll beachtet werden, dass die Hardware nicht manipulativ oder gewaltsam genutzt wird, indem kommuniziert wird, dass das Produkt mit Sorge behandelt werden müsse. Dies kann mittels eines Schilds oder mündlich kommuniziert werden.
 |===
 ****
 
