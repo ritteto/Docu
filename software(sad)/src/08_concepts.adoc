@@ -58,11 +58,19 @@ Ein zentrales Element des Controllers ist das Listener-basierte Modell. Für jed
 
 Ebenso werden die Joysticks überwacht, um kontinuierliche Bewegungsanforderungen zu erkennen und zu verarbeiten. Die Zustände movingRight und movingLeft, die in AtomicBoolean Variablen gespeichert sind, werden durch Joystick-Ereignisse aktualisiert, die wiederum die Bewegungsrichtung des Spielers in der Anwendung steuern. Dies wird durch einen AnimationTimer erreicht, der in regelmäßigen Abständen überprüft, ob eine Bewegung erforderlich ist und dementsprechend die Funktion movePlayer aufruft, um die Position des Spielers anzupassen.
 
-=== _<Konzept 2>_
+=== Punktesystem
 
-_<Erklärung>_
+Dieses Konzept beschreibt das Punktesystem, das nachhaltiges Verhalten von Benutzern bewertet. Der Punktestand wird durch verschiedene Aktionen beeinflusst, die Nutzer mit Gegenständen durchführen.
 
-...
+Das System überwacht kontinuierlich die Benutzeraktionen und klassifiziert Gegenstände in funktionsfähig, reparierbar und defekt. Basierend auf dieser Klassifizierung erfolgt die Bewertung der Aktionen.
+
+Der Punktestand wird erhöht, wenn nachhaltige Maßnahmen ergriffen werden. Die volle Punktzahl gibt es für den Weiterverkauf funktionsfähiger Gegenstände, die Reparatur reparierbarer Gegenstände und das Recycling defekter Gegenstände. Die halbe Punktzahl gibt es für das Zur-Reparatur-Bringen funktionsfähiger Gegenstände und das Zum-Markt-Bringen reparierbarer Gegenstände.
+
+Eine Reduktion des Punktestands erfolgt, wenn Benutzer die Gelegenheit verpassen, einen funktionsfähigen, reparierbaren oder defekten Gegenstand nachhaltig zu nutzen.
+
+Der Punktestand bleibt unverändert, wenn funktionsfähige oder reparierbare Gegenstände recycelt werden oder defekte Gegenstände zur Reparatur oder zum Markt gebracht werden.
+
+Zum Schluss des Spiels wird die Anzahl Punkte sowie eine Tabelle mit den Highscores gezeigt.
 
 === _<Konzept n>_
 
